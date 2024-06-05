@@ -1,0 +1,424 @@
+@font-face {
+    font-family: 'cagke';
+    src: url('./fonts/cagkeextrabold-8mpja.otf') format('otf');
+  }
+
+@font-face {
+    font-family:'PT Mono';
+    src: url('./fonts/PTM55FT.ttf') format('ttf');
+  }
+
+@font-face {
+    font-family:'NeueKabelW01-Regular';
+    src: url('./fonts/neue/02408ccd8efcf169db4e41d6e0551118.woff') format('woff');
+  }
+
+  
+
+
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  :root {
+    /* Dark Mode (Default) */
+    --main-bg-color: #1E1E1E;
+    --secondary-bg-color: #424242;
+    --light-color: #E6E6E6;
+    --text-color: #E6E6E6;
+    --special-color: #11CC5C;
+
+    --title-font-family: 'cagke';
+    --passage-font-family: 'NeueKabelW01-Regular';
+    --coding-font-style: 'PT Mono';
+
+    --sections-margin: 6rem;
+  
+    /* Light Mode (Optional) */
+   /*  --light-mode-main-bg-color: #E6E6E6;
+    --light-mode-secondary-bg-color: #FFFFFF;
+    --light-mode-dark-color: #1E1E1E;
+    --light-mode-text-color: #1E1E1E;
+    --light-mode-special-color: #11CC5C; */
+  }
+
+
+
+/* Main Stylesheet */
+
+/* ========== Global Styles ========== */
+
+body{
+    background-color: var(--secondary-bg-color);
+    margin: 0;
+}
+
+/* ========== Header Section ========== */
+
+header{
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    width: 100%;
+    margin: 0;
+}
+
+
+header .img-and-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+header .img-container {
+}
+
+header .img-container img {
+    width: 10rem;
+    border-radius: 5rem;
+}
+
+header .title-container {
+}
+
+header .title-container h1 {
+    font-family: 'cagke';
+}
+
+header .title-container h6 {
+}
+
+header .title-container h6 span {
+}
+
+header nav.nav {
+    
+}
+
+header .nav .item-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--passage-font-family);
+}
+
+header .nav .item-container .item1 {
+}
+
+header .nav .item-container .item1 img {
+}
+
+header .nav .item-container .item1 p {
+}
+
+header .nav .item-container .item2 {
+}
+
+header .nav .item-container .item2 img {
+}
+
+header .nav .item-container .item2 p {
+}
+
+header .nav .item-container .item3 {
+}
+
+header .nav .item-container .item3 img {
+}
+
+header .nav .item-container .item3 p {
+}
+
+header .nav .item-container .item4 {
+}
+
+header .nav .item-container .item4 img {
+}
+
+header .nav .item-container .item4 p {
+}
+
+
+/* ========== About Section ========== */
+section.about-container {
+}
+
+section.about-container .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--light-color);
+    margin: 0 var(--sections-margin);
+    
+}
+
+section.about-container .about-content img {
+}
+
+section.about-container .about-content h1 {
+    font-family: var(--title-font-family);
+}
+
+section.about-container .about-content p {
+    font-family: var(--passage-font-family);
+}
+
+
+/* ========== Skills Section ========== */
+section.skills-container {
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+section.skills-container .skills-content {
+}
+
+section.skills-container .skills-content h1 {
+    font-family: var(--title-font-family);
+    color: var(--light-color);
+    text-align: center;
+}
+
+.front-and-graphic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+section.skills-container .skills-content .front-end-skills {
+    color: var(--light-color);
+    font-family: var(--passage-font-family);
+    border-right: 2px solid var(--secondary-bg-color);
+}
+
+section.skills-container .skills-content .front-end-skills h3 {
+}
+
+.skills-items-container {
+    display: flex;
+    flex-direction: row;
+}
+
+section.skills-container .skills-content .front-end-skills .skills-items-container .rating {
+}
+
+section.skills-container .skills-content .front-end-skills .skills-items-container .rating p {
+}
+
+section.skills-container .skills-content .front-end-skills .skills-items-container .logos {
+}
+
+section.skills-container .skills-content .front-end-skills .skills-items-container .logos img {
+}
+
+section.skills-container .skills-content .front-end-skills .skills-items-container .names {
+}
+
+section.skills-container .skills-content .front-end-skills .skills-items-container .names p {
+}
+
+section.skills-container .skills-content .graphic-design-skills {
+    color: var(--light-color);
+    font-family: var(--passage-font-family);
+}
+
+section.skills-container .skills-content .graphic-design-skills h3 {
+}
+
+section.skills-container .skills-content .graphic-design-skills .skills-items-container {
+}
+
+section.skills-container .skills-content .graphic-design-skills .skills-items-container .rating {
+}
+
+section.skills-container .skills-content .graphic-design-skills .skills-items-container .rating p {
+}
+
+section.skills-container .skills-content .graphic-design-skills .skills-items-container .logos {
+}
+
+section.skills-container .skills-content .graphic-design-skills .skills-items-container .logos img {
+}
+
+section.skills-container .skills-content .graphic-design-skills .skills-items-container .names {
+}
+
+section.skills-container .skills-content .graphic-design-skills .skills-items-container .names p {
+}
+
+
+/* ========== Quote Section ========== */
+section.quote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem  var(--sections-margin);
+    
+}
+
+section.quote-container h1 {
+    margin: 0;
+    color: var(--special-color);
+    
+}
+
+section.quote-container blockquote {
+    
+    color: var(--light-color);
+    font-family: var(--passage-font-family);
+}
+
+section.quote-container blockquote cite {
+}
+
+
+/* ========== Projects Section ========== */
+section.projects-container {
+    background-color: var(--main-bg-color);
+    color: var(--light-color);
+    text-align: center;
+}
+
+section.projects-container h1 {
+    font-family: var(--title-font-family);
+}
+
+section.projects-container .project-items-container {
+    font-family: var(--passage-font-family);
+    
+    margin: var(--sections-margin);
+
+    display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; 
+}
+
+.p-item{
+    flex: 1 1 45%; /* 45% width allows for some gap between items */
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 1rem;
+    border: 1px solid black;
+    background-color: var(--secondary-bg-color);
+}
+
+
+section.projects-container .project-items-container .project-item {
+}
+
+section.projects-container .project-items-container .project-item h4 {
+}
+
+section.projects-container .project-items-container .project-item .project-img-container {
+    height: 8rem;
+}
+
+section.projects-container .project-items-container .project-item .project-img-container img {
+}
+
+section.projects-container .project-items-container .project-item p {
+}
+
+section.projects-container .project-items-container .project-item .more-btn {
+}
+
+
+/* ========== Links Section ========== */
+section.links-container {
+    height: 5rem;
+}
+
+section.links-container .links-item-container {
+}
+
+section.links-container .links-item-container a {
+}
+
+
+/* ========== Contact Section ========== */
+section.contact-container {
+    background-color: var(--main-bg-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.contact-container h1 {
+    color: var(--light-color);
+    font-family: var(--title-font-family);
+    text-align: center;
+}
+
+section.contact-container form {
+    display: flex;
+    flex-direction: column;
+    margin: var(--sections-margin);
+}
+
+section.contact-container form .first-last-name-container {
+    display: flex;
+}
+
+.first-name-container, .last-name-container {   
+    display: flex;
+    flex-direction: column
+}
+
+label{
+    color: var(--light-color);
+}
+
+
+
+section.contact-container form .first-last-name-container label {
+}
+
+section.contact-container form .first-last-name-container input {
+}
+
+section.contact-container form label {
+}
+
+section.contact-container form input {
+}
+
+section.contact-container form textarea {
+}
+
+section.contact-container form button {
+}
+
+section.contact-container .social-media-container {
+}
+
+section.contact-container .social-media-container a {
+}
+
+section.contact-container .social-media-container a img {
+}
+
+
+/* ========== Footer Section ========== */
+footer {
+}
+
+footer p {
+}
+
+
+
