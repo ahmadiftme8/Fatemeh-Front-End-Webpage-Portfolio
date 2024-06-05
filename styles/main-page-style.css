@@ -65,6 +65,12 @@ header{
     color: var(--text-color);
     width: 100%;
     margin: 0;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 
@@ -72,15 +78,17 @@ header .img-and-title-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%
+    width: 100%;
+    margin-bottom: ;
+    gap: 3rem;
 }
 
 header .img-container {
 }
 
 header .img-container img {
-    width: 10rem;
-    border-radius: 5rem;
+    width: 20rem;
+    border-radius: 10rem;
 }
 
 header .title-container {
@@ -88,16 +96,31 @@ header .title-container {
 
 header .title-container h1 {
     font-family: 'cagke';
+    font-size: 4rem;
+    margin: 0;
+    line-height: 1.2;
+    
 }
 
 header .title-container h6 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: var(--coding-font-style);
+    font-weight: 200;
+    opacity: 0.7;
+    margin-top: 1.5rem;
+
 }
 
 header .title-container h6 span {
+    color: var(--special-color);
+
 }
 
 header nav.nav {
-    
+    background-color: var(--special-color);
+    width: 100%;
+    transform: translateY(8rem);
 }
 
 header .nav .item-container {
@@ -106,15 +129,27 @@ header .nav .item-container {
     justify-content: center;
     align-items: center;
     font-family: var(--passage-font-family);
+    padding: 0.5rem 0;
+    
 }
 
-header .nav .item-container .item1 {
+
+div.n-item{
+    display: flex;
+    flex-direction: row;
+    border-right: 2px solid var(--secondary-bg-color);
+    gap: 0.5rem;
+    padding: 0 1rem;
+}
+.n-item svg {
+    height: 1rem;
+    fill: var(--secondary-bg-color);
 }
 
-header .nav .item-container .item1 img {
-}
-
-header .nav .item-container .item1 p {
+.item-container p {
+    margin: 0;
+    padding: 0;
+    color: var(--main-bg-color);
 }
 
 header .nav .item-container .item2 {
