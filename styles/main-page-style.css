@@ -1,3 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+
+
+
 @font-face {
     font-family: 'cagke';
     src: url('./fonts/cagkeextrabold-8mpja.eot'); /* IE9 Compatibility */
@@ -49,7 +58,7 @@
     --text-color: #E6E6E6;
     --special-color: #11CC5C;
 
-    --title-font-family: 'cagke';
+    --title-font-family: "Fredericka the Great", serif;;
     --passage-font-family: 'NeueKabelW01-Regular';
     --coding-font-style: 'PT Mono';
 
@@ -111,10 +120,12 @@ header .title-container {
 }
 
 header .title-container h1 {
-    font-family: 'cagke';
+    font-family: var(--title-font-family);
     font-size: 4rem;
     margin: 0;
     line-height: 1.2;
+    font-weight: 100;
+    
     
 }
 
@@ -442,6 +453,8 @@ section.skills-container .skills-content h1 {
     font-family: var(--title-font-family);
     color: var(--light-color);
     text-align: center;
+    font-weight: 100;
+    font-size: 3rem;
 }
 
 .front-and-graphic-container {
@@ -576,6 +589,7 @@ section.projects-container .project-items-container .project-item {
 }
 
 section.projects-container .project-items-container .project-item h4 {
+    font-weight: 100;
 }
 
 section.projects-container .project-items-container .project-item .project-img-container {
