@@ -1,17 +1,33 @@
 @font-face {
     font-family: 'cagke';
-    src: url('./fonts/cagkeextrabold-8mpja.otf') format('otf');
-  }
+    src: url('./fonts/cagkeextrabold-8mpja.eot'); /* IE9 Compatibility */
+    src: url('./fonts/cagkeextrabold-8mpja.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/cagkeextrabold-8mpja.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/cagkeextrabold-8mpja.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/cagkeextrabold-8mpja.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/cagkeextrabold-8mpja.svg#cagkeextrabold') format('svg'); /* Legacy iOS */
+}
 
 @font-face {
-    font-family:'PT Mono';
-    src: url('./fonts/PTM55FT.ttf') format('ttf');
-  }
+    font-family: 'PT Mono';
+    src: url('./fonts/PTM55FT.eot');
+    src: url('./fonts/PTM55FT.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/PTM55FT.woff2') format('woff2'),
+         url('./fonts/PTM55FT.woff') format('woff'),
+         url('./fonts/PTM55FT.ttf') format('truetype'),
+         url('./fonts/PTM55FT.svg#PTMono') format('svg');
+}
 
 @font-face {
-    font-family:'NeueKabelW01-Regular';
-    src: url('./fonts/neue/02408ccd8efcf169db4e41d6e0551118.woff') format('woff');
-  }
+    font-family: 'NeueKabelW01-Regular';
+    src: url('./fonts/neue/02408ccd8efcf169db4e41d6e0551118.eot');
+    src: url('./fonts/neue/02408ccd8efcf169db4e41d6e0551118.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/neue/02408ccd8efcf169db4e41d6e0551118.woff2') format('woff2'),
+         url('./fonts/neue/02408ccd8efcf169db4e41d6e0551118.woff') format('woff'),
+         url('./fonts/neue/02408ccd8efcf169db4e41d6e0551118.ttf') format('truetype'),
+         url('./fonts/neue/02408ccd8efcf169db4e41d6e0551118.svg#NeueKabelW01-Regular') format('svg');
+}
+
 
   
 
