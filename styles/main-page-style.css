@@ -58,7 +58,7 @@
     --text-color: #E6E6E6;
     --special-color: #11CC5C;
 
-    --title-font-family: "Fredericka the Great", serif;;
+    --title-font-family: "Fredericka the Great", serif;
     --passage-font-family: 'NeueKabelW01-Regular';
     --coding-font-style: 'PT Mono';
 
@@ -120,7 +120,7 @@ header .title-container {
 }
 
 header .title-container h1 {
-    font-family: var(--title-font-family);
+    font-family: "Fredericka the Great", serif;
     font-size: 4rem;
     margin: 0;
     line-height: 1.2;
