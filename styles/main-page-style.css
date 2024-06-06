@@ -122,7 +122,7 @@ header nav.nav {
     background-color: var(--special-color);
     width: 100%;
     position: absolute;
-    bottom: 2rem;
+    top: 0;
 }
 
 header .nav .item-container {
@@ -131,7 +131,7 @@ header .nav .item-container {
     justify-content: center;
     align-items: center;
     font-family: var(--passage-font-family);
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     font-size: 1.2rem;
     
 }
@@ -140,10 +140,16 @@ header .nav .item-container {
 div.n-item{
     display: flex;
     flex-direction: row;
-    border-right: 2px solid var(--secondary-bg-color);
+    border-right: 1px solid var(--secondary-bg-color);
     gap: 0.5rem;
     padding: 0 3rem;
 }
+
+div .n-item:last-child{
+    border: none;
+}
+
+
 .n-item svg {
     font-size: 1.2rem;
     height: 1.3rem;
@@ -197,21 +203,22 @@ header .nav .item-container .item4 p {
     }
 
     header .img-container img {
-        width: 10rem;
+        width: 15rem;
     }
 
     
     header .title-container h1 {
         font-family: 'cagke';
-        font-size: 2rem;
+        font-size: 3rem;
         margin: 0;
         line-height: 1.2;
+        text-align: left;
         
     }
 
     header .title-container h6 {
         margin: 0;
-        font-size: 0.5rem;
+        font-size: 1rem;
         font-family: var(--coding-font-style);
         font-weight: 200;
         opacity: 0.7;
@@ -238,7 +245,7 @@ header .nav .item-container .item4 p {
         background-color: var(--special-color);
         
         position: absolute;
-        bottom: 2rem;
+        top: 0;
         transform: unset;
     }
 
@@ -248,7 +255,7 @@ header .nav .item-container .item4 p {
         justify-content: center;
         align-items: center;
         font-family: var(--passage-font-family);
-        padding: 0.5rem 0;
+        
         
         
     }
@@ -257,7 +264,6 @@ header .nav .item-container .item4 p {
     div.n-item{
         display: flex;
         flex-direction: row;
-        border-right: 2px solid var(--secondary-bg-color);
         padding: 0 1rem;
         
         
@@ -279,13 +285,23 @@ header .nav .item-container .item4 p {
 
 
 @media screen and (max-width: 350px) {
+    html{
+        width: 100vw;
+        position: relative;
+    }
+    body{
+        
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
 
     header{
         background-color: var(--main-bg-color);
         color: var(--text-color);
-        
+        min-width: 100vw;
         margin: 0;
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -296,8 +312,6 @@ header .nav .item-container .item4 p {
 
     header .img-and-title-container {
         flex-direction: column;
-        width: 110%;
-        margin-bottom: ;
         gap: 1rem;
     }
 
@@ -331,7 +345,7 @@ header .nav .item-container .item4 p {
         background-color: var(--special-color);
         
         position: absolute;
-        bottom: 2rem;
+        top: 0;
         transform: unset;
     }
 
@@ -341,7 +355,7 @@ header .nav .item-container .item4 p {
         justify-content: center;
         align-items: center;
         font-family: var(--passage-font-family);
-        padding: 0.5rem 0;
+        
         
         
     }
@@ -350,7 +364,6 @@ header .nav .item-container .item4 p {
     div.n-item{
         display: flex;
         flex-direction: row;
-        border-right: 2px solid var(--secondary-bg-color);
         padding: 0 1rem;
         
         
@@ -490,7 +503,8 @@ section.quote-container {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 3rem  var(--sections-margin);
+    
+    width: 100%;
     
 }
 
@@ -594,15 +608,18 @@ section.contact-container form {
     display: flex;
     flex-direction: column;
     margin: var(--sections-margin);
+    width: 100%;
 }
 
 section.contact-container form .first-last-name-container {
     display: flex;
+    position: relative;
 }
 
 .first-name-container, .last-name-container {   
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    width: 50%;
 }
 
 label{
