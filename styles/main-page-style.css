@@ -9,12 +9,13 @@
 
 @font-face {
     font-family: 'Cagke';
-    src: url('./fonts/Cagke-Extrabold.eot');
-    src: url('./fonts/Cagke-Extrabold.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/Cagke-Extrabold.woff2') format('woff2'),
-        url('./fonts/Cagke-Extrabold.woff') format('woff'),
-        url('./fonts/Cagke-Extrabold.ttf') format('truetype'),
-        url('./fonts/Cagke-Extrabold.svg#Cagke-Extrabold') format('svg');
+    src: url('../fonts/Cagke-Extrabold.eot');
+    src: url('../fonts/Cagke-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Cagke-Extrabold.woff2') format('woff2'),
+        url('../fonts/Cagke-Extrabold.woff') format('woff'),
+        url('../fonts/Cagke-Extrabold.ttf') format('truetype'),
+        url('../fonts/cagkeextrabold-8mpja.otf') format('opentype'),
+        url('../fonts/Cagke-Extrabold.svg#Cagke-Extrabold') format('svg');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -22,12 +23,15 @@
 
 @font-face {
     font-family: 'PT Mono';
-    src: url('./fonts/PTM55FT.eot');
-    src: url('./fonts/PTM55FT.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/PTM55FT.woff2') format('woff2'),
-         url('./fonts/PTM55FT.woff') format('woff'),
-         url('./fonts/PTM55FT.ttf') format('truetype'),
-         url('./fonts/PTM55FT.svg#PTMono') format('svg');
+    src: url('../ptmono/PTMono-Regular.eot');
+    src: url('../ptmono/PTMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../ptmono/PTMono-Regular.woff2') format('woff2'),
+        url('../ptmono/PTMono-Regular.woff') format('woff'),
+        url('../ptmono/PTMono-Regular.ttf') format('truetype'),
+        url('../ptmono/PTMono-Regular.svg#PTMono-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -61,7 +65,7 @@
     --text-color: #E6E6E6;
     --special-color: #11CC5C;
 
-    --title-font-family: 'cagke', serif;
+    --title-font-family: 'Cagke', serif;
     --passage-font-family: 'NeueKabelW01-Regular';
     --coding-font-style: 'PT Mono';
 
@@ -123,7 +127,7 @@ header .title-container {
 }
 
 header .title-container h1 {
-    font-family: 'cagke', serif;
+    font-family: 'Cagke', serif;
     font-size: 4rem;
     margin: 0;
     line-height: 1.2;
@@ -238,7 +242,7 @@ header .nav .item-container .item4 p {
 
     
     header .title-container h1 {
-        font-family: 'cagke';
+        font-family: 'Cagke';
         font-size: 3rem;
         margin: 0;
         line-height: 1.2;
@@ -351,7 +355,7 @@ header .nav .item-container .item4 p {
 
     
     header .title-container h1 {
-        font-family: 'cagke';
+        font-family: 'Cagke';
         font-size: 2rem;
         margin: 0;
         line-height: 1.2;
