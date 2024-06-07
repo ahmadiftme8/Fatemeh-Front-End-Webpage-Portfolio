@@ -154,10 +154,19 @@ header .title-container h6 span {
 }
 
 header nav.nav {
-    background-color: var(--special-color);
-    width: 100%;
-    position: absolute;
-    top: 0;
+    
+    width: 90%;
+    position: fixed;
+    top: 1rem;
+    border-radius: 100px;
+
+    /* blurred bg */
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    /* blurred bg */
 }
 
 header .nav .item-container {
@@ -169,6 +178,7 @@ header .nav .item-container {
     padding: 1rem 0;
     font-size: 1.2rem;
     
+    
 }
 
 
@@ -178,6 +188,9 @@ div.n-item{
     border-right: 1px solid var(--secondary-bg-color);
     gap: 0.5rem;
     padding: 0 3rem;
+    color: var(--light-color);
+    cursor: pointer;
+    
 }
 
 div .n-item:last-child{
@@ -188,13 +201,13 @@ div .n-item:last-child{
 .n-item svg {
     font-size: 1.2rem;
     height: 1.3rem;
-    fill: var(--secondary-bg-color);
+    fill: var(--light-color);
 }
 
 .item-container p {
     margin: 0;
     padding: 0;
-    color: var(--main-bg-color);
+    
 }
 
 header .nav .item-container .item2 {
@@ -277,10 +290,7 @@ header .nav .item-container .item4 p {
     }
 
     header nav.nav {
-        background-color: var(--special-color);
         
-        position: absolute;
-        top: 0;
         transform: unset;
     }
 
@@ -306,13 +316,12 @@ header .nav .item-container .item4 p {
     .n-item svg {
         
         height: 0.7rem;
-        fill: var(--secondary-bg-color);
     }
     
     .item-container p {
         margin: 0;
         padding: 0;
-        color: var(--main-bg-color);
+        
         font-size: 0.7rem;
     }
     
@@ -377,10 +386,7 @@ header .nav .item-container .item4 p {
    
 
     header nav.nav {
-        background-color: var(--special-color);
         
-        position: absolute;
-        top: 0;
         transform: unset;
     }
 
@@ -406,13 +412,12 @@ header .nav .item-container .item4 p {
     .n-item svg {
         
         height: 0.7rem;
-        fill: var(--secondary-bg-color);
     }
     
     .item-container p {
         margin: 0;
         padding: 0;
-        color: var(--main-bg-color);
+        
         font-size: 0.7rem;
     }
     
