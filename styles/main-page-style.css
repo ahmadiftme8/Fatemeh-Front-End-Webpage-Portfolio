@@ -8,13 +8,16 @@
 
 
 @font-face {
-    font-family: 'cagke';
-    src: url('./fonts/cagkeextrabold-8mpja.eot'); /* IE9 Compatibility */
-    src: url('./fonts/cagkeextrabold-8mpja.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('./fonts/cagkeextrabold-8mpja.woff2') format('woff2'), /* Super Modern Browsers */
-         url('./fonts/cagkeextrabold-8mpja.woff') format('woff'), /* Modern Browsers */
-         url('./fonts/cagkeextrabold-8mpja.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('./fonts/cagkeextrabold-8mpja.svg#cagkeextrabold') format('svg'); /* Legacy iOS */
+    font-family: 'Cagke';
+    src: url('fonts/Cagke-Extrabold.eot');
+    src: url('fonts/Cagke-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Cagke-Extrabold.woff2') format('woff2'),
+        url('fonts/Cagke-Extrabold.woff') format('woff'),
+        url('fonts/Cagke-Extrabold.ttf') format('truetype'),
+        url('fonts/Cagke-Extrabold.svg#Cagke-Extrabold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -58,7 +61,7 @@
     --text-color: #E6E6E6;
     --special-color: #11CC5C;
 
-    --title-font-family: "Fredericka the Great", serif;
+    --title-font-family: 'cagke', serif;
     --passage-font-family: 'NeueKabelW01-Regular';
     --coding-font-style: 'PT Mono';
 
