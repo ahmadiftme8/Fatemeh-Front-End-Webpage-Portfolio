@@ -9,12 +9,12 @@
 
 @font-face {
     font-family: 'Cagke';
-    src: url('fonts/Cagke-Extrabold.eot');
-    src: url('fonts/Cagke-Extrabold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Cagke-Extrabold.woff2') format('woff2'),
-        url('fonts/Cagke-Extrabold.woff') format('woff'),
-        url('fonts/Cagke-Extrabold.ttf') format('truetype'),
-        url('fonts/Cagke-Extrabold.svg#Cagke-Extrabold') format('svg');
+    src: url('./fonts/Cagke-Extrabold.eot');
+    src: url('./fonts/Cagke-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Cagke-Extrabold.woff2') format('woff2'),
+        url('./fonts/Cagke-Extrabold.woff') format('woff'),
+        url('./fonts/Cagke-Extrabold.ttf') format('truetype'),
+        url('./fonts/Cagke-Extrabold.svg#Cagke-Extrabold') format('svg');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
