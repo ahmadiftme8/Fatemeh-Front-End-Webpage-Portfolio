@@ -155,7 +155,7 @@ header .title-container h6 span {
 
 header nav.nav {
     
-    width: 90%;
+    width: 500px;
     position: fixed;
     top: 1rem;
     border-radius: 100px;
@@ -290,7 +290,7 @@ header .nav .item-container .item4 p {
     }
 
     header nav.nav {
-        
+        width: 90%;
         transform: unset;
     }
 
@@ -388,6 +388,7 @@ header .nav .item-container .item4 p {
     header nav.nav {
         
         transform: unset;
+        width: 90%;
     }
 
     header .nav .item-container {
