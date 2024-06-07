@@ -67,7 +67,7 @@
 
     --title-font-family: 'Cagke', serif;
     --passage-font-family: 'NeueKabelW01-Regular';
-    --coding-font-style: 'PT Mono';
+    --coding-font-style: 'PT Mono', monospace;
 
     --sections-margin: 6rem;
   
@@ -103,6 +103,7 @@ header{
     justify-content: center;
     align-items: center;
     position: relative;
+    
 }
 
 
