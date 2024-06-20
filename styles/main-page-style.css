@@ -120,7 +120,7 @@ header .img-container {
 }
 
 header .img-container img {
-    width: 20rem;
+    width: 15rem;
     border-radius: 10rem;
 }
 
@@ -155,7 +155,7 @@ header .title-container h6 span {
 
 header nav.nav {
     
-    width: 500px;
+    width:700px;
     position: fixed;
     top: 1rem;
     border-radius: 100px;
@@ -172,11 +172,11 @@ header nav.nav {
 header .nav .item-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
     font-family: var(--passage-font-family);
     padding: 1rem 0;
-    font-size: 1.2rem;
+    
     
     
 }
@@ -190,7 +190,15 @@ div.n-item{
     padding: 0 3rem;
     color: var(--light-color);
     cursor: pointer;
-    
+    text-transform: uppercase;  
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.n-item a {
+    text-decoration: none;
+    color: var(--light-color);
+    scroll-behavior: smooth;
 }
 
 div .n-item:last-child{

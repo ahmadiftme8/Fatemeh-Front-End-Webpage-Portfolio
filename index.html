@@ -17,7 +17,9 @@
                         <path d="M8.03759 7.31617L8.6866 8.4791C9.2723 9.52858 9.03718 10.9053 8.11471 11.8278C8.11471 11.8278 8.11471 11.8278 8.11471 11.8278C8.11459 11.8279 6.99588 12.9468 9.02451 14.9755C11.0525 17.0035 12.1714 15.8861 12.1722 15.8853C12.1722 15.8853 12.1722 15.8853 12.1722 15.8853C13.0947 14.9628 14.4714 14.7277 15.5209 15.3134L16.6838 15.9624C18.2686 16.8468 18.4557 19.0692 17.0628 20.4622C16.2258 21.2992 15.2004 21.9505 14.0669 21.9934C12.1588 22.0658 8.91828 21.5829 5.6677 18.3323C2.41713 15.0817 1.93421 11.8412 2.00655 9.93309C2.04952 8.7996 2.7008 7.77423 3.53781 6.93723C4.93076 5.54428 7.15317 5.73144 8.03759 7.31617Z"/>
                     </svg>
                     
-                    <p>Contact</p>
+                    <p>
+                        <a href="#contact">contact</a>
+                    </p>
                 </div>
                 <div class="n-item">
                     
@@ -28,7 +30,7 @@
                         <defs>
                     
                     </defs>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                        <g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd" sketch:type="MSPage">
                             <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-314.000000, -673.000000)" fill="var(--light-color)">
                                 <path d="M328,673 L326,673 C324.896,673 324,673.896 324,675 L324,703 C324,704.104 324.896,705 326,705 L328,705 C329.104,705 330,704.104 330,703 L330,675 C330,673.896 329.104,673 328,673 L328,673 Z M338,689 L336,689 C334.896,689 334,689.896 334,691 L334,703 C334,704.104 334.896,705 336,705 L338,705 C339.104,705 340,704.104 340,703 L340,691 C340,689.896 339.104,689 338,689 L338,689 Z M318,682 L316,682 C314.896,682 314,682.896 314,684 L314,703 C314,704.104 314.896,705 316,705 L318,705 C319.104,705 320,704.104 320,703 L320,684 C320,682.896 319.104,682 318,682 L318,682 Z" id="stats" sketch:type="MSShapeGroup">
                     
@@ -37,7 +39,9 @@
                         </g>
                     </svg>
                     
-                    <p>Skills</p>
+                    <p>
+                        <a href="#skills">skills</a>
+                    </p>
                 </div>
                 <div class="n-item">
                     
@@ -57,7 +61,12 @@
             </div>
 
             <div class="title-container">
-                <h1 style="font-family: 'cagke', serif;">Hi, I'm<br>Fatemeh.A</h1>
+                <h1 class="typewrite" 
+                data-period="2000" data-type='[ "Hi, Im \n Fatemeh.A"]'
+                style="font-family: 'cagke', serif;"><!-- Hi, I'm<br>Fatemeh.A -->
+            
+                <span class="wrap"></span>
+            </h1>
                 <h6>`a <span> ${front-end}</span> developer`</h6>
             </div>
         </div>
@@ -75,7 +84,7 @@
         </div>
     </section>
 
-    <section class="skills-container">
+    <section class="skills-container" id="skills">
         <div class="skills-content">
             <h1>Skills</h1>
             <div class="front-and-graphic-container">
@@ -143,7 +152,7 @@
         </blockquote>
     </section>
 
-    <section class="projects-container">
+    <section class="projects-container" id="projects">
         <h1>Projects</h1>
         <div class="project-items-container">
             <div class="project-item p-item">
@@ -208,8 +217,8 @@
         </div>
     </section>
 
-    <section class="contact-container">
-        <h1>Contact</h1>
+    <section class="contact-container" id="contact">
+        <h1>CONTACT</h1>
         <form action="submit">
 
             <div class="first-last-name-container">
@@ -265,5 +274,6 @@
     </footer>
 
     
+    <script src="scripts/script.js"></script>
 </body>
 </html>
