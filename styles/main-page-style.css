@@ -97,7 +97,7 @@ header{
     color: var(--text-color);
     width: 100%;
     margin: 0;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -153,6 +153,42 @@ header .title-container h6 span {
 
 }
 
+.down-arrow-container {
+fill:#e6e6e674;
+position: absolute;
+bottom: 10%;
+
+}
+
+.down-arrow-container svg{
+    
+}
+
+/* fade in and out the arrow div */
+
+/* styles.css */
+
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+  }
+
+  .down-arrow-container {
+    opacity: 1;
+    animation: fadeInOut 1s infinite;
+  }
+  
+
+/* fade in and out the arrow div */
+
 header nav.nav {
     
     width:700px;
@@ -198,11 +234,15 @@ div.n-item{
 .n-item a {
     text-decoration: none;
     color: var(--light-color);
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 div .n-item:last-child{
     border: none;
+}
+
+.n-item{
+    scroll-behavior: smooth;
 }
 
 
@@ -288,7 +328,7 @@ header .nav .item-container .item4 p {
         color: var(--text-color);
         
         margin: 0;
-        height: 90vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -580,6 +620,7 @@ section.projects-container {
     background-color: var(--main-bg-color);
     color: var(--light-color);
     text-align: center;
+    scroll-behavior: smooth;
 }
 
 section.projects-container h1 {
