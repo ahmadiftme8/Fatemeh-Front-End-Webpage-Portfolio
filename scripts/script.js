@@ -1,26 +1,22 @@
-/* // script.js
-const fadeDiv = document.querySelector('.down-arrow-container');
-let cycles = 0;
-const totalCycles = 5;
+console.log('hi');
 
 
-function fadeInOut() {
+
+const fadeDiv= document.getElementById('down-arrow-container');
+
+const isShowing = false;
+
+
+function fadeout(){
+  fadeDiv.classList.add('down-arrow-container');
+    setTimeout(() => {
+       
+       
+fadeDiv.style.display = 'none';
+    }, 4000);
+
     
-} */
-
-/* function fadeInOut() {
-  fadeDiv.style.animation = 'fadeInOut 2s ease-in-out';
-  
-  fadeDiv.addEventListener('animationend', handleAnimationEnd, { once: true });
 }
 
-function handleAnimationEnd() {
-  cycles++;
-  if (cycles < totalCycles) {
-    fadeInOut();
-  } else {
-    fadeDiv.style.opacity = 0;
-  }
-}
 
-fadeInOut(); */
+fadeout();
