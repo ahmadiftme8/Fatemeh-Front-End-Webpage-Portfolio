@@ -156,7 +156,14 @@ header .title-container h6 span {
 .down-arrow-container {
 fill:#e6e6e674;
 position: absolute;
-bottom: 10%;
+bottom: 1rem;
+
+display: flex;
+justify-content: center;
+align-items: center;
+height: 20vh;
+padding-bottom: 1rem;
+
 
 }
 
@@ -184,7 +191,7 @@ bottom: 10%;
 
   .down-arrow-container {
     opacity: 1;
-    animation: fadeInOut 1s infinite;
+    animation: fadeInOut 1.3s infinite;
   }
   
 
@@ -329,7 +336,7 @@ header .nav .item-container .item4 p {
         color: var(--text-color);
         
         margin: 0;
-        height: 100vh;
+        height: 95vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -470,6 +477,11 @@ header .nav .item-container .item4 p {
         
         font-size: 0.7rem;
     }
+    .down-arrow-container {
+        
+        padding-bottom: 3rem;
+        
+        }
     
 }
 
