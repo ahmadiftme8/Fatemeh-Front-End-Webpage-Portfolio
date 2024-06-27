@@ -154,7 +154,7 @@ header .title-container h6 span {
 }
 
 .down-arrow-container {
-fill:#e6e6e674;
+fill:#e6e6e63c;
 position: absolute;
 bottom: 1rem;
 
@@ -165,10 +165,17 @@ height: 20vh;
 padding-bottom: 1rem;
 
 
+
 }
 
 .down-arrow-container svg{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+  
+    font-size: 2rem;
 }
 
 
@@ -191,7 +198,7 @@ padding-bottom: 1rem;
 
   .down-arrow-container {
     opacity: 1;
-    animation: fadeInOut 1.3s infinite;
+    animation: fadeInOut 1.5s infinite;
   }
   
 
@@ -294,7 +301,7 @@ header .nav .item-container .item4 p {
 }
 
 /* ========== hero media queies ========== */
-@media screen and (max-width: 600px) and (min-width: 350px) {
+@media screen and (max-width: 576px) and (min-width: 350px) {
 
     header .img-and-title-container {
         display: flex;
@@ -317,6 +324,8 @@ header .nav .item-container .item4 p {
         margin: 0;
         line-height: 1.2;
         text-align: left;
+        display: flex;
+        justify-content: center;
         
     }
 
@@ -425,6 +434,7 @@ header .nav .item-container .item4 p {
         font-size: 2rem;
         margin: 0;
         line-height: 1.2;
+        
         
     }
 
