@@ -13,7 +13,7 @@ function fadeout(){
        
        
 fadeDiv.style.display = 'none';
-    }, 5000);
+    }, 6000);
 
     
 }

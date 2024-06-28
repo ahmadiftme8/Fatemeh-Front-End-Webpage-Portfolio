@@ -44,9 +44,11 @@
          url('./fonts/neue/02408ccd8efcf169db4e41d6e0551118.svg#NeueKabelW01-Regular') format('svg');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-  
 
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 
   body {
@@ -66,7 +68,8 @@
     --special-color: #11CC5C;
 
     --title-font-family: 'Cagke', serif;
-    --passage-font-family: 'NeueKabelW01-Regular';
+    --passage-font-family:"Raleway", sans-serif;
+    --passage-font-weight: 100;
     --coding-font-style: 'PT Mono', monospace;
 
     --sections-margin: 6rem;
@@ -393,6 +396,8 @@ header .nav .item-container .item4 p {
 }
 
 
+
+
 @media screen and (max-width: 350px) {
     html{
         width: 100vw;
@@ -434,7 +439,7 @@ header .nav .item-container .item4 p {
         font-size: 2rem;
         margin: 0;
         line-height: 1.2;
-        
+
         
     }
 
@@ -494,10 +499,16 @@ header .nav .item-container .item4 p {
         }
     
 }
+/* general */
+section p{
+    font-weight: var(--passage-font-weight);
+    font-family: var(--passage-font-family);
 
+}
 
 /* ========== About Section ========== */
 section.about-container {
+    
 }
 
 section.about-container .about-content {
@@ -506,7 +517,8 @@ section.about-container .about-content {
     align-items: center;
     flex-direction: column;
     color: var(--light-color);
-    margin: 0 var(--sections-margin);
+    margin: 3rem 2rem var(--sections-margin) 2rem;
+    
     
 }
 
@@ -517,8 +529,29 @@ section.about-container .about-content h1 {
     font-family: var(--title-font-family);
 }
 
+.about-text-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+   
+    width: 70%;
+    height: 120%;
+}
+
+.about-img-container{
+    padding-right: 2rem;
+}
+
+.about-text-img-container img{
+    width: 100%;
+    
+}
+
 section.about-container .about-content p {
     font-family: var(--passage-font-family);
+    
+    
 }
 
 
@@ -532,6 +565,10 @@ section.skills-container {
 }
 
 section.skills-container .skills-content {
+}
+
+section h1{
+    font-size: 3rem;
 }
 
 section.skills-container .skills-content h1 {
@@ -779,6 +816,29 @@ footer {
 footer p {
 }
 
+
+
+
+
+@media screen and (max-width: 850px) {
+    .about-text-img-container{
+        flex-direction: column;
+    }
+
+    .about-text-img-container p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-text-img-container img{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .about-img-container{
+        padding-right: unset;
+    }
+}
 
 
 
