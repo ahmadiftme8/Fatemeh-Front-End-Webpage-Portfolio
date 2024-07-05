@@ -527,6 +527,7 @@ section.about-container .about-content {
 }
 
 section.about-container .about-content img {
+    border-radius: 1.5rem
 }
 
 section.about-container .about-content h1 {
