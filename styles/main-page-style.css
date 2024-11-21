@@ -828,7 +828,7 @@ section.projects-container h1 {
 section.projects-container .project-items-container {
     font-family: var(--passage-font-family);
     
-    margin: var(--sections-margin);
+    margin: 0 2rem var(--sections-margin) 2rem;
 
     display: flex;
   flex-wrap: wrap;
