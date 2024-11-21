@@ -853,8 +853,9 @@ section.projects-container .project-items-container .project-item h4 {
     font-weight: 100;
 }
 
-section.projects-container .project-items-container .project-item .project-img-container {
-    height: 8rem;
+section.projects-container .project-items-container .project-item1 .project-img-container img {
+    width: 100%;
+
 }
 
 section.projects-container .project-items-container .project-item .project-img-container img {
