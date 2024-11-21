@@ -862,6 +862,15 @@ section.projects-container .project-items-container .project-item .more-btn {
 }
 
 
+@media screen and (max-width: 740px) and (min-width: 200px) {
+    
+    .project-items-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /* ========== Links Section ========== */
 section.links-container {
     height: 5rem;
