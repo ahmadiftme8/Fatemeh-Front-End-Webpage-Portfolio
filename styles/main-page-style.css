@@ -891,7 +891,7 @@ section.projects-container .project-items-container .project-item p {
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-around;
     
 
     
