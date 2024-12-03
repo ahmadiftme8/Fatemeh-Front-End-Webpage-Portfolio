@@ -841,8 +841,8 @@ section.projects-container .project-items-container {
     display: flex;
     flex-direction: column;
 
-    border-radius: 1rem;
-    border: 1px solid black;
+    
+    
     background-color: var(--secondary-bg-color);
     padding-left: 0;
     padding-right: 0;
@@ -858,11 +858,13 @@ section.projects-container .project-items-container .project-item {
 section.projects-container .project-items-container .p-item h4 {
     font-weight:600;
     font-size:x-large;
- background-color: #000;
+border-bottom: 0.5rem solid var(--main-bg-color);
+
+
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
     margin-top: 0;
-    border-radius: 1rem 1rem 0 0;
+   /*  border-radius: 1rem 1rem 0 0; */
     
 }
 
