@@ -540,7 +540,7 @@ section.about-container .about-content h1 {
     align-items: center;
     flex-direction: row;
    
-    width: 70%;
+    max-width: 600px;
     height: 120%;
 }
 
@@ -718,6 +718,22 @@ section.about-container .about-content p {
 }
 
 
+
+.photoshop-bar{
+    width: 95%;
+}
+.illustrator-bar{
+    width: 80%;
+}
+.premier-bar{
+    width: 60%;
+}
+
+.lightroom-bar{
+    width: 98%;
+}
+
+
 @media screen and (max-width: 475px) {
     .skill-content{
        
@@ -792,7 +808,7 @@ section.quote-container {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    padding: 6rem 0 6rem 0;
     width: 100%;
     
 }
@@ -800,6 +816,10 @@ section.quote-container {
 section.quote-container h1 {
     margin: 0;
     color: var(--special-color);
+    font-size: 6rem;
+    margin: 0;
+    padding: 0;
+    
     
 }
 
@@ -807,6 +827,11 @@ section.quote-container blockquote {
     
     color: var(--light-color);
     font-family: var(--passage-font-family);
+    max-width: 400px;
+    text-align: center;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
 }
 
 section.quote-container blockquote cite {
