@@ -261,8 +261,8 @@ div.n-item{
 
 .item-container :hover{
     
-    
-   background-color: white;
+    border-radius: 2rem;
+   background-color: var(--light-color);
    color: black;
    fill: black;
 
@@ -1181,6 +1181,8 @@ form {
     flex-direction: column;
     gap: 15px;
     max-width: 600px;
+    font-family: var(--passage-font-family);
+    
 }
 
 /* First and Last Name Containers */
@@ -1188,6 +1190,7 @@ form {
     display: flex;
     flex-direction: row;
     gap: 4rem;
+    
 }
 
 .first-name-container {
@@ -1204,7 +1207,7 @@ input[type="text"], input[type="email"], textarea {
     color: #fff;
     border: none;
     border-radius: 25px;
-    padding: 10px 20px;
+    padding: 10px 0px;
     width: 100%;
     font-size: 14px;
 }
@@ -1224,6 +1227,14 @@ label {
 textarea {
     resize: none;
     height: 100px;
+}
+
+@media screen and (max-width: 580px) {
+
+    form{
+        max-width: 90%;
+    }
+    
 }
 
 /* Submit Button */
@@ -1302,6 +1313,8 @@ footer p {
     .about-img-container{
         padding-right: unset;
     }
+
+    
 }
 
 
