@@ -234,17 +234,20 @@ header .nav .item-container {
     justify-content:center;
     align-items:center;
     font-family: var(--passage-font-family);
-    padding: 1rem 0;
+    
+    
     
     
     
 }
 
 
+
+
 div.n-item{
     display: flex;
     flex-direction: row;
-    border-right: 1px solid var(--secondary-bg-color);
+    
     gap: 0.5rem;
     padding: 0 3rem;
     color: var(--light-color);
@@ -252,12 +255,50 @@ div.n-item{
     text-transform: uppercase;  
     font-weight: 100;
     font-size: 0.9rem;
+    padding: 1rem 1rem;
+    
+}
+
+.item-container :hover{
+    
+    
+   background-color: white;
+   color: black;
+   fill: black;
+
+   p{
+    color: black;
+    fill: black;
+   }
+   a{
+    color: #1E1E1E;
+    fill: black;
+   }
+
+   
+}
+
+.n-item p{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.n-item:hover{
+    svg{
+        color: #1E1E1E;
+        fill: black;
+    }
+
+
 }
 
 .n-item a {
     text-decoration: none;
     color: var(--light-color);
-    scroll-behavior: smooth !important;
+    
+   
 }
 
 div .n-item:last-child{
@@ -266,6 +307,10 @@ div .n-item:last-child{
 
 .n-item{
     scroll-behavior: smooth;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -1108,6 +1153,124 @@ section.contact-container .social-media-container a {
 
 section.contact-container .social-media-container a img {
 }
+
+
+/* 
+contact section 2 cloud ctreadted */
+
+/* Styling for the CONTACT section */
+/* .contact-container {
+    background-color: #444;
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+} */
+
+/* .contact-container h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+} */
+
+/* Styling for the form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+}
+
+/* First and Last Name Containers */
+.first-last-name-container {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.first-name-container {
+  
+}
+
+.last-name-container {
+   
+}
+
+/* Input Fields */
+input[type="text"], input[type="email"], textarea {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #888;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+/* Textarea */
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Submit Button */
+button {
+    background-color: #888;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #aaa;
+}
+
+/* Social Media Container */
+.social-media-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-media-container a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.social-media-container a:hover {
+    background-color: #888;
+}
+
+.social-media-container img {
+    width: 20px;
+    height: 20px;
+}
+
 
 
 /* ========== Footer Section ========== */
