@@ -783,10 +783,10 @@ color: var(--light-color);
     width: 95%;
 }
 .css-bar{
-    width: 50%;
+    width: 80%;
 }
 .js-bar{
-    width: 40%;
+    width: 60%;
 }
 .figma-bar{
     width: 60%;
