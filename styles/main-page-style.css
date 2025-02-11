@@ -639,10 +639,10 @@ section.about-container .about-content p {
 
 .skill-content{
    
-    width: 40rem;
+    width: 60rem;
     height: 25rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     
 }
 
@@ -657,6 +657,12 @@ section.about-container .about-content p {
 .front-end{
     border-right: 2px solid rgb(41, 41, 41);
 }
+.graphic-design{
+    border-right: 2px solid rgb(41, 41, 41);
+
+}
+
+
 
 .skill-field-title-container{
     
@@ -741,6 +747,18 @@ section.about-container .about-content p {
     width: 100%;
     height: 20%;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+
+}
+
+.skill-rate-percent{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    
 }
 
 .rating-bar{
@@ -755,6 +773,10 @@ section.about-container .about-content p {
     background-color: rgb(101, 101, 101);
     height: 100%;
     border-radius: 1rem;
+}
+
+.skill-rate-percen{
+color: var(--light-color);
 }
 
 .html-bar{
@@ -795,6 +817,10 @@ section.about-container .about-content p {
         display: grid;
         grid-template-columns: 1fr;
         row-gap: 2rem;
+    }
+
+    .graphic-design{
+        border: unset;
     }
 
     .skills-content{
@@ -838,7 +864,8 @@ section.about-container .about-content p {
 
 
     .rating-bar{
-        width: 50%;
+        width: 70%;
+        height: 0.45rem;
     }
 
     .front-end{
