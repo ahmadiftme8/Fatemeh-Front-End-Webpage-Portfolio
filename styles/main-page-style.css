@@ -418,9 +418,7 @@ header .nav .item-container .item4 p {
         justify-content: center;
         align-items: center;
         font-family: var(--passage-font-family);
-        
-        
-        
+     
     }
     
     
@@ -428,6 +426,9 @@ header .nav .item-container .item4 p {
         display: flex;
         flex-direction: row;
         padding: 0 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        
         
         
     }
@@ -908,6 +909,8 @@ section.projects-container .project-items-container {
     display: flex;
   flex-wrap: wrap;
   gap: 1rem; 
+  
+  
 }
 
 .p-item{
@@ -918,11 +921,17 @@ section.projects-container .project-items-container {
 
     
     
-    background-color: var(--secondary-bg-color);
+    
     padding-left: 0;
     padding-right: 0;
-    padding-top: 0;
+    padding-top: 2rem;
+
     justify-content: space-between;
+    border-radius: 2rem;
+
+
+    border-left: 3px solid var(--secondary-bg-color);
+  border-bottom: 3px solid var(--secondary-bg-color);
 
 }
 
@@ -932,13 +941,18 @@ section.projects-container .project-items-container .project-item {
 
 section.projects-container .project-items-container .p-item h4 {
     font-weight:600;
-    font-size:x-large;
-border-bottom: 0.5rem solid var(--main-bg-color);
+    font-size:large;
+
+color: var(--light-color);
+margin-bottom: 1rem;
+border-radius: 2rem;
 
 
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
-    margin-top: 0;
+
+    
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
    /*  border-radius: 1rem 1rem 0 0; */
     
 }
@@ -958,6 +972,8 @@ section.projects-container .project-items-container .p-item p {
     text-align-last: center;
     padding-top: 0;
     margin-top: 0;
+    
+    
 }
 
 
@@ -1057,12 +1073,14 @@ border: 2px solid rgba(255, 255, 255, 0.32);
         box-sizing: border-box; /* Include padding/border in width calculations */
         /* padding: 10px; */ /* Optional spacing inside the boxes */
         /* border: 1px solid #ccc; */ /* Optional: visual border for each box */
+        
     }
 }
 
 @media screen and (min-width: 880px) {
     .p-item {
         flex: 1 1 20%; /* Each box takes up 25% width */
+        
     }
     
 }
