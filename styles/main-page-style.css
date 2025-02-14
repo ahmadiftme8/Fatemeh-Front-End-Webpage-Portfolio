@@ -640,7 +640,7 @@ section.about-container .about-content p {
 .skill-content{
    
     width: 60rem;
-    height: 25rem;
+    height:fit-content;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     
@@ -749,7 +749,7 @@ section.about-container .about-content p {
     margin-bottom: 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    
     align-items: center;
     gap:0.5rem;
 
@@ -809,6 +809,23 @@ color: var(--light-color);
 
 .lightroom-bar{
     width: 98%;
+}
+
+
+.english-bar{
+    width: 90%;
+}
+.aiTools-bar{
+    width: 95%;
+}
+.videography-bar{
+    width: 80%;
+}
+.storytelling-bar{
+    width: 85%;
+}
+.photography-bar{
+    width: 99%;
 }
 
 
@@ -939,7 +956,9 @@ section.projects-container .project-items-container {
     margin: 0 2rem var(--sections-margin) 2rem;
 
     display: flex;
-  flex-wrap: wrap;
+    flex-direction: column;
+    
+  
   gap: 1rem; 
   
   
@@ -949,21 +968,24 @@ section.projects-container .project-items-container {
     position: relative;
     flex: 1 1 45%; /* 45% width allows for some gap between items */
     display: flex;
-    flex-direction: column;
-
-    
-    
+    flex-direction: row;
     
     padding-left: 0;
     padding-right: 0;
     padding-top: 2rem;
 
-    justify-content: space-between;
-    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem; 
+    gap: 2rem;
 
 
     border-left: 3px solid var(--secondary-bg-color);
   border-bottom: 3px solid var(--secondary-bg-color);
+
+}
+
+.project-details-container{
 
 }
 
@@ -990,7 +1012,7 @@ border-radius: 2rem;
 }
 
 section.projects-container .project-items-container .p-item .project-img-container img {
-    width: 90%;
+    max-width: 400px;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
 }
@@ -1365,6 +1387,77 @@ footer p {
     }
 
     
+}
+
+
+
+
+/* =====language statistics======= */
+.lang-stat-wrapper {
+    
+    padding: 20px;
+    border-radius: 6px;
+    max-width: 400px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.lang-stat-heading {
+    color: #c9d1d9;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.lang-stat-bar-wrapper {
+    height: 8px;
+    
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.lang-stat-bar-segment {
+    height: 100%;
+    float: left;
+    transition: width 0.3s ease;
+}
+
+.lang-stat-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lang-stat-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #c9d1d9;
+    font-size: 14px;
+}
+
+.lang-stat-color-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.lang-stat-percentage {
+    margin-left: auto;
+    color: #8b949e;
+}
+
+/* Language-specific color classes */
+.lang-stat-color-javascript {
+    background-color: #f1e05a;
+}
+
+.lang-stat-color-css {
+    background-color: #563d7c;
+}
+
+.lang-stat-color-html {
+    background-color: #e34c26;
 }
 
 

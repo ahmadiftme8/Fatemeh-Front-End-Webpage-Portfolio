@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fatemeh.A</title>
     <link rel="stylesheet" href="styles/main-page-style.css">
+    <link rel="stylesheet" href="styles/toggleListDropDown.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -69,27 +70,11 @@
         
     </header>
 
-    <section class="about-container">
-        <div class="about-content">
-            <img src="" alt="">
-            <h1>About</h1>
-            <div class="about-text-img-container">
-                <!-- <div class="about-img-container">
-                    <img src="images/ftme/ftm2.jpg" alt="">
-                </div> -->
-
-                <div class="about-text-container">
-                    <p>
-
-                        Hi, I’m Fatemeh Ahmadi, a 25-year-old graphic designer and front-end developer from Iran. I have 5 years of graphic design experience and 1 year in front-end development, focusing on creating responsive, visually engaging interfaces with HTML, CSS, and JavaScript. I'm passionate about blending creativity with technical skills, exploring programming-based automation, mobile videography, and storytelling to deliver unique, innovative solutions.
-
-
-                        <!-- 👋 <b>Greetings</b>  from a developer who <b>loves</b> to turn concepts into reality! 🚀 While I may be early in my career, my passion for front-end development has driven me to create websites that speak to users both <b>aesthetically</b> and <b>functionally</b> . 🎨 I’m here to learn, contribute, and make a <b>positive impact</b> in the digital world. 🌟🌐 -->
-                    </p>
-                </div>
-                
-            </div>
-            
+    <section class="links-container">
+        <div class="links-item-container">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
         </div>
     </section>
 
@@ -257,59 +242,90 @@
                         <div class="logo-name-rating-container">
                             <div class="logo-name-container">
                                 <div class="skill-logo-container">
-                                    <img src="images/png-icons/ps.png" alt="">
+                                    <img src="images/png-icons/en.png" alt="">
                                 </div>
-                                <div class="skill-name-container">Photoshop</div>
+                                <div class="skill-name-container">English Language</div>
                             </div>
                             <div class="rating-container">
                                 <div class="rating-bar">
-                                    <div class="rating-bar-amount photoshop-bar"></div>
+                                    <div class="rating-bar-amount english-bar"></div>
         
                                 </div>
+
+                                <h3 class="skill-rate-percent">90%</h3>
+
                             </div>
                         </div>
                         <div class="logo-name-rating-container">
                             <div class="logo-name-container">
                                 <div class="skill-logo-container">
-                                    <img src="images/png-icons/illustrator.png" alt="">
+                                    <img src="images/png-icons/aitools.png" alt="">
                                 </div>
-                                <div class="skill-name-container">Illustrator</div>
+                                <div class="skill-name-container">Ai Tools</div>
                             </div>
                             <div class="rating-container">
                                 <div class="rating-bar">
-                                    <div class="rating-bar-amount illustrator-bar"></div>
+                                    <div class="rating-bar-amount aiTools-bar"></div>
         
                                 </div>
+
+                                <h3 class="skill-rate-percent">95%</h3>
+
                             </div>
                         </div>
                         <div class="logo-name-rating-container">
                             <div class="logo-name-container">
                                 <div class="skill-logo-container">
-                                    <img src="images/png-icons/premiere.png" alt="">
+                                    <img src="images/png-icons/videography.png" alt="">
                                 </div>
-                                <div class="skill-name-container">Premier Pro</div>
+                                <div class="skill-name-container">Videogrphy</div>
                             </div>
                             <div class="rating-container">
                                 <div class="rating-bar">
-                                    <div class="rating-bar-amount premier-bar"></div>
+                                    <div class="rating-bar-amount videography-bar"></div>
         
                                 </div>
+
+                                <h3 class="skill-rate-percent">80%</h3>
+
                             </div>
                         </div>
                         <div class="logo-name-rating-container">
                             <div class="logo-name-container">
                                 <div class="skill-logo-container">
-                                    <img src="images/png-icons/lightroom.png" alt="">
+                                    <img src="images/png-icons/storytelling.png" alt="">
                                 </div>
-                                <div class="skill-name-container">Adobe Lightroom</div>
+                                <div class="skill-name-container">StoryTelling</div>
                             </div>
                             <div class="rating-container">
                                 <div class="rating-bar">
-                                    <div class="rating-bar-amount lightroom-bar"></div>
+                                    <div class="rating-bar-amount storytelling-bar"></div>
         
                                 </div>
+
+                                <h3 class="skill-rate-percent">85%</h3>
+
                             </div>
                         </div>
+
+                        <div class="logo-name-rating-container">
+                            <div class="logo-name-container">
+                                <div class="skill-logo-container">
+                                    <img src="images/png-icons/photography.png" alt="">
+                                </div>
+                                <div class="skill-name-container">Photography</div>
+                            </div>
+                            <div class="rating-container">
+                                <div class="rating-bar">
+                                    <div class="rating-bar-amount photography-bar"></div>
+        
+                                </div>
+
+                                <h3 class="skill-rate-percent">99%</h3>
+
+                            </div>
+                        </div>
+
                     </div>
         
                 </div>
@@ -319,12 +335,12 @@
         </div>
     </section>
 
-    <section class="quote-container">
+    <!-- <section class="quote-container">
         <h1>"</h1>
         <blockquote id="project-show">
             "A complex system that works is invariably found to have evolved from a simple system that worked." <cite>-Gall's law</cite> 
         </blockquote>
-    </section>
+    </section> -->
 
     <section class="projects-container" id="projects">
         <h1>Projects</h1>
@@ -334,32 +350,80 @@
                 <div class="project-img-container">
                     <img src="images/projects/testpic.jpg" alt="">
                 </div>
-                <h4>TuneBox : Music Player</h4>
-                <p>
-                    TuneBox: A sleek and intuitive music player that delivers seamless playback, dynamic song displays, and personalized mood-based playlists for an enhanced listening experience.
-                </p>
+                
+                <div class="project-details-container">
 
-                <div class="project-btn-container">
-                    <button class="preview-btn" onclick="window.open('https://ahmadiftme8.github.io/music-player/', '_blank');">
-                        <svg class="eye-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 83.78">
-                            <path d="M95.73,10.81c10.53,7.09,19.6,17.37,26.48,29.86l0.67,1.22l-0.67,1.21c-6.88,12.49-15.96,22.77-26.48,29.86
-                              C85.46,79.88,73.8,83.78,61.44,83.78c-12.36,0-24.02-3.9-34.28-10.81C16.62,65.87,7.55,55.59,0.67,43.1L0,41.89l0.67-1.22
-                              c6.88-12.49,15.95-22.77,26.48-29.86C37.42,3.9,49.08,0,61.44,0C73.8,0,85.45,3.9,95.73,10.81L95.73,10.81z 
-                              M60.79,22.17l4.08,0.39c-1.45,2.18-2.31,4.82-2.31,7.67c0,7.48,5.86,13.54,13.1,13.54c2.32,0,4.5-0.62,6.39-1.72
-                              c0.03,0.47,0.05,0.94,0.05,1.42c0,11.77-9.54,21.31-21.31,21.31c-11.77,0-21.31-9.54-21.31-21.31
-                              C39.48,31.71,49.02,22.17,60.79,22.17L60.79,22.17L60.79,22.17z M109,41.89c-5.5-9.66-12.61-17.6-20.79-23.11
-                              c-8.05-5.42-17.15-8.48-26.77-8.48c-9.61,0-18.71,3.06-26.76,8.48c-8.18,5.51-15.29,13.45-20.8,23.11
-                              c5.5,9.66,12.62,17.6,20.8,23.1c8.05,5.42,17.15,8.48,26.76,8.48c9.62,0,18.71-3.06,26.77-8.48
-                              C96.39,59.49,103.5,51.55,109,41.89L109,41.89z"/>
-                          </svg>
-                        Preview
-                    </button>
-                    <button class="code-btn" onclick="window.open('https://github.com/ahmadiftme8/music-player', '_blank');">
-                        <svg class="code-icon" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640"><path d="M319.988 7.973C143.293 7.973 0 151.242 0 327.96c0 141.392 91.678 261.298 218.826 303.63 16.004 2.964 21.886-6.957 21.886-15.414 0-7.63-.319-32.835-.449-59.552-89.032 19.359-107.8-37.772-107.8-37.772-14.552-36.993-35.529-46.831-35.529-46.831-29.032-19.879 2.209-19.442 2.209-19.442 32.126 2.245 49.04 32.954 49.04 32.954 28.56 48.922 74.883 34.76 93.131 26.598 2.882-20.681 11.15-34.807 20.315-42.803-71.08-8.067-145.797-35.516-145.797-158.14 0-34.926 12.52-63.485 32.965-85.88-3.33-8.078-14.291-40.606 3.083-84.674 0 0 26.87-8.61 88.029 32.8 25.512-7.075 52.878-10.642 80.056-10.76 27.2.118 54.614 3.673 80.162 10.76 61.076-41.386 87.922-32.8 87.922-32.8 17.398 44.08 6.485 76.631 3.154 84.675 20.516 22.394 32.93 50.953 32.93 85.879 0 122.907-74.883 149.93-146.117 157.856 11.481 9.921 21.733 29.398 21.733 59.233 0 42.792-.366 77.28-.366 87.804 0 8.516 5.764 18.473 21.992 15.354 127.076-42.354 218.637-162.274 218.637-303.582 0-176.695-143.269-319.988-320-319.988l-.023.107z"/></svg>
+                    <h4>TuneBox : Music Player</h4>
 
-                        Code
-                    </button>
+                    <div class="custom-dropdown-wrapper">
+                        <div class="custom-dropdown-container">
+                            <div class="smooth-dropdown-box" id="customDropdown">
+                                <div class="smooth-dropdown-header">
+                                    <span class="smooth-dropdown-title">Key Features</span>
+                                    <svg class="smooth-dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="smooth-dropdown-content">
+                                    <ul class="smooth-dropdown-list" id="itemsList">
+                                        <!-- Items will be populated by JavaScript -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="lang-stat-wrapper">
+                        <h3 class="lang-stat-heading">Languages</h3>
+                        
+                        <div class="lang-stat-bar-wrapper">
+                            <div class="lang-stat-bar-segment lang-stat-color-javascript" style="width: 56.3%"></div>
+                            <div class="lang-stat-bar-segment lang-stat-color-css" style="width: 26.2%"></div>
+                            <div class="lang-stat-bar-segment lang-stat-color-html" style="width: 17.5%"></div>
+                        </div>
+                        
+                        <ul class="lang-stat-list">
+                            <li class="lang-stat-list-item">
+                                <span class="lang-stat-color-dot lang-stat-color-javascript"></span>
+                                JavaScript
+                                <span class="lang-stat-percentage">56.3%</span>
+                            </li>
+                            <li class="lang-stat-list-item">
+                                <span class="lang-stat-color-dot lang-stat-color-css"></span>
+                                CSS
+                                <span class="lang-stat-percentage">26.2%</span>
+                            </li>
+                            <li class="lang-stat-list-item">
+                                <span class="lang-stat-color-dot lang-stat-color-html"></span>
+                                HTML
+                                <span class="lang-stat-percentage">17.5%</span>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="project-btn-container">
+                        <button class="preview-btn" onclick="window.open('https://ahmadiftme8.github.io/music-player/', '_blank');">
+                            <svg class="eye-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 83.78">
+                                <path d="M95.73,10.81c10.53,7.09,19.6,17.37,26.48,29.86l0.67,1.22l-0.67,1.21c-6.88,12.49-15.96,22.77-26.48,29.86
+                                  C85.46,79.88,73.8,83.78,61.44,83.78c-12.36,0-24.02-3.9-34.28-10.81C16.62,65.87,7.55,55.59,0.67,43.1L0,41.89l0.67-1.22
+                                  c6.88-12.49,15.95-22.77,26.48-29.86C37.42,3.9,49.08,0,61.44,0C73.8,0,85.45,3.9,95.73,10.81L95.73,10.81z 
+                                  M60.79,22.17l4.08,0.39c-1.45,2.18-2.31,4.82-2.31,7.67c0,7.48,5.86,13.54,13.1,13.54c2.32,0,4.5-0.62,6.39-1.72
+                                  c0.03,0.47,0.05,0.94,0.05,1.42c0,11.77-9.54,21.31-21.31,21.31c-11.77,0-21.31-9.54-21.31-21.31
+                                  C39.48,31.71,49.02,22.17,60.79,22.17L60.79,22.17L60.79,22.17z M109,41.89c-5.5-9.66-12.61-17.6-20.79-23.11
+                                  c-8.05-5.42-17.15-8.48-26.77-8.48c-9.61,0-18.71,3.06-26.76,8.48c-8.18,5.51-15.29,13.45-20.8,23.11
+                                  c5.5,9.66,12.62,17.6,20.8,23.1c8.05,5.42,17.15,8.48,26.76,8.48c9.62,0,18.71-3.06,26.77-8.48
+                                  C96.39,59.49,103.5,51.55,109,41.89L109,41.89z"/>
+                              </svg>
+                            Preview
+                        </button>
+                        <button class="code-btn" onclick="window.open('https://github.com/ahmadiftme8/music-player', '_blank');">
+                            <svg class="code-icon" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640"><path d="M319.988 7.973C143.293 7.973 0 151.242 0 327.96c0 141.392 91.678 261.298 218.826 303.63 16.004 2.964 21.886-6.957 21.886-15.414 0-7.63-.319-32.835-.449-59.552-89.032 19.359-107.8-37.772-107.8-37.772-14.552-36.993-35.529-46.831-35.529-46.831-29.032-19.879 2.209-19.442 2.209-19.442 32.126 2.245 49.04 32.954 49.04 32.954 28.56 48.922 74.883 34.76 93.131 26.598 2.882-20.681 11.15-34.807 20.315-42.803-71.08-8.067-145.797-35.516-145.797-158.14 0-34.926 12.52-63.485 32.965-85.88-3.33-8.078-14.291-40.606 3.083-84.674 0 0 26.87-8.61 88.029 32.8 25.512-7.075 52.878-10.642 80.056-10.76 27.2.118 54.614 3.673 80.162 10.76 61.076-41.386 87.922-32.8 87.922-32.8 17.398 44.08 6.485 76.631 3.154 84.675 20.516 22.394 32.93 50.953 32.93 85.879 0 122.907-74.883 149.93-146.117 157.856 11.481 9.921 21.733 29.398 21.733 59.233 0 42.792-.366 77.28-.366 87.804 0 8.516 5.764 18.473 21.992 15.354 127.076-42.354 218.637-162.274 218.637-303.582 0-176.695-143.269-319.988-320-319.988l-.023.107z"/></svg>
+    
+                            Code
+                        </button>
+                    </div>
                 </div>
+                
                 
             </div>
 
@@ -464,14 +528,168 @@
                 </div>
                 
             </div>
+
+            <div class="project-item5 p-item">
+                
+                <div class="project-img-container">
+                    <img src="images/projects/countdown.jpg" alt="">
+                </div>
+                <h4>Fancy Count Down</h4>
+                <p>
+                    A classic Rock-Paper-Scissors game with a sleek UI, interactive animations, and a responsive design. Enjoy multiple sessions with randomized outcomes for each round.
+                </p>
+
+                <div class="project-btn-container">
+                    <button class="preview-btn" onclick="window.open('https://ahmadiftme8.github.io/rspgame/', '_blank');">
+                        <svg class="eye-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 83.78">
+                            <path d="M95.73,10.81c10.53,7.09,19.6,17.37,26.48,29.86l0.67,1.22l-0.67,1.21c-6.88,12.49-15.96,22.77-26.48,29.86
+                              C85.46,79.88,73.8,83.78,61.44,83.78c-12.36,0-24.02-3.9-34.28-10.81C16.62,65.87,7.55,55.59,0.67,43.1L0,41.89l0.67-1.22
+                              c6.88-12.49,15.95-22.77,26.48-29.86C37.42,3.9,49.08,0,61.44,0C73.8,0,85.45,3.9,95.73,10.81L95.73,10.81z 
+                              M60.79,22.17l4.08,0.39c-1.45,2.18-2.31,4.82-2.31,7.67c0,7.48,5.86,13.54,13.1,13.54c2.32,0,4.5-0.62,6.39-1.72
+                              c0.03,0.47,0.05,0.94,0.05,1.42c0,11.77-9.54,21.31-21.31,21.31c-11.77,0-21.31-9.54-21.31-21.31
+                              C39.48,31.71,49.02,22.17,60.79,22.17L60.79,22.17L60.79,22.17z M109,41.89c-5.5-9.66-12.61-17.6-20.79-23.11
+                              c-8.05-5.42-17.15-8.48-26.77-8.48c-9.61,0-18.71,3.06-26.76,8.48c-8.18,5.51-15.29,13.45-20.8,23.11
+                              c5.5,9.66,12.62,17.6,20.8,23.1c8.05,5.42,17.15,8.48,26.76,8.48c9.62,0,18.71-3.06,26.77-8.48
+                              C96.39,59.49,103.5,51.55,109,41.89L109,41.89z"/>
+                          </svg>
+                        Preview
+                    </button>
+                    <button class="code-btn" onclick="window.open('https://github.com/ahmadiftme8/rspgame', '_blank');">
+                        <svg class="code-icon" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640"><path d="M319.988 7.973C143.293 7.973 0 151.242 0 327.96c0 141.392 91.678 261.298 218.826 303.63 16.004 2.964 21.886-6.957 21.886-15.414 0-7.63-.319-32.835-.449-59.552-89.032 19.359-107.8-37.772-107.8-37.772-14.552-36.993-35.529-46.831-35.529-46.831-29.032-19.879 2.209-19.442 2.209-19.442 32.126 2.245 49.04 32.954 49.04 32.954 28.56 48.922 74.883 34.76 93.131 26.598 2.882-20.681 11.15-34.807 20.315-42.803-71.08-8.067-145.797-35.516-145.797-158.14 0-34.926 12.52-63.485 32.965-85.88-3.33-8.078-14.291-40.606 3.083-84.674 0 0 26.87-8.61 88.029 32.8 25.512-7.075 52.878-10.642 80.056-10.76 27.2.118 54.614 3.673 80.162 10.76 61.076-41.386 87.922-32.8 87.922-32.8 17.398 44.08 6.485 76.631 3.154 84.675 20.516 22.394 32.93 50.953 32.93 85.879 0 122.907-74.883 149.93-146.117 157.856 11.481 9.921 21.733 29.398 21.733 59.233 0 42.792-.366 77.28-.366 87.804 0 8.516 5.764 18.473 21.992 15.354 127.076-42.354 218.637-162.274 218.637-303.582 0-176.695-143.269-319.988-320-319.988l-.023.107z"/></svg>
+
+                        Code
+                    </button>
+                </div>
+                
+            </div>
+
+            <div class="project-item6 p-item">
+                
+                <div class="project-img-container">
+                    <img src="images/projects/mathspinnergame.jpg" alt="">
+                </div>
+                <h4>Math Spinner Game</h4>
+                <p>
+                    A classic Rock-Paper-Scissors game with a sleek UI, interactive animations, and a responsive design. Enjoy multiple sessions with randomized outcomes for each round.
+                </p>
+
+                <div class="project-btn-container">
+                    <button class="preview-btn" onclick="window.open('https://ahmadiftme8.github.io/rspgame/', '_blank');">
+                        <svg class="eye-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 83.78">
+                            <path d="M95.73,10.81c10.53,7.09,19.6,17.37,26.48,29.86l0.67,1.22l-0.67,1.21c-6.88,12.49-15.96,22.77-26.48,29.86
+                              C85.46,79.88,73.8,83.78,61.44,83.78c-12.36,0-24.02-3.9-34.28-10.81C16.62,65.87,7.55,55.59,0.67,43.1L0,41.89l0.67-1.22
+                              c6.88-12.49,15.95-22.77,26.48-29.86C37.42,3.9,49.08,0,61.44,0C73.8,0,85.45,3.9,95.73,10.81L95.73,10.81z 
+                              M60.79,22.17l4.08,0.39c-1.45,2.18-2.31,4.82-2.31,7.67c0,7.48,5.86,13.54,13.1,13.54c2.32,0,4.5-0.62,6.39-1.72
+                              c0.03,0.47,0.05,0.94,0.05,1.42c0,11.77-9.54,21.31-21.31,21.31c-11.77,0-21.31-9.54-21.31-21.31
+                              C39.48,31.71,49.02,22.17,60.79,22.17L60.79,22.17L60.79,22.17z M109,41.89c-5.5-9.66-12.61-17.6-20.79-23.11
+                              c-8.05-5.42-17.15-8.48-26.77-8.48c-9.61,0-18.71,3.06-26.76,8.48c-8.18,5.51-15.29,13.45-20.8,23.11
+                              c5.5,9.66,12.62,17.6,20.8,23.1c8.05,5.42,17.15,8.48,26.76,8.48c9.62,0,18.71-3.06,26.77-8.48
+                              C96.39,59.49,103.5,51.55,109,41.89L109,41.89z"/>
+                          </svg>
+                        Preview
+                    </button>
+                    <button class="code-btn" onclick="window.open('https://github.com/ahmadiftme8/rspgame', '_blank');">
+                        <svg class="code-icon" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640"><path d="M319.988 7.973C143.293 7.973 0 151.242 0 327.96c0 141.392 91.678 261.298 218.826 303.63 16.004 2.964 21.886-6.957 21.886-15.414 0-7.63-.319-32.835-.449-59.552-89.032 19.359-107.8-37.772-107.8-37.772-14.552-36.993-35.529-46.831-35.529-46.831-29.032-19.879 2.209-19.442 2.209-19.442 32.126 2.245 49.04 32.954 49.04 32.954 28.56 48.922 74.883 34.76 93.131 26.598 2.882-20.681 11.15-34.807 20.315-42.803-71.08-8.067-145.797-35.516-145.797-158.14 0-34.926 12.52-63.485 32.965-85.88-3.33-8.078-14.291-40.606 3.083-84.674 0 0 26.87-8.61 88.029 32.8 25.512-7.075 52.878-10.642 80.056-10.76 27.2.118 54.614 3.673 80.162 10.76 61.076-41.386 87.922-32.8 87.922-32.8 17.398 44.08 6.485 76.631 3.154 84.675 20.516 22.394 32.93 50.953 32.93 85.879 0 122.907-74.883 149.93-146.117 157.856 11.481 9.921 21.733 29.398 21.733 59.233 0 42.792-.366 77.28-.366 87.804 0 8.516 5.764 18.473 21.992 15.354 127.076-42.354 218.637-162.274 218.637-303.582 0-176.695-143.269-319.988-320-319.988l-.023.107z"/></svg>
+
+                        Code
+                    </button>
+                </div>
+                
+            </div>
+
+            <div class="project-item7 p-item">
+                
+                <div class="project-img-container">
+                    <img src="images/projects/bookkeeper.jpg" alt="">
+                </div>
+                <h4>Bookmark Keeper</h4>
+                <p>
+                    A classic Rock-Paper-Scissors game with a sleek UI, interactive animations, and a responsive design. Enjoy multiple sessions with randomized outcomes for each round.
+                </p>
+
+                <div class="project-btn-container">
+                    <button class="preview-btn" onclick="window.open('https://ahmadiftme8.github.io/rspgame/', '_blank');">
+                        <svg class="eye-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 83.78">
+                            <path d="M95.73,10.81c10.53,7.09,19.6,17.37,26.48,29.86l0.67,1.22l-0.67,1.21c-6.88,12.49-15.96,22.77-26.48,29.86
+                              C85.46,79.88,73.8,83.78,61.44,83.78c-12.36,0-24.02-3.9-34.28-10.81C16.62,65.87,7.55,55.59,0.67,43.1L0,41.89l0.67-1.22
+                              c6.88-12.49,15.95-22.77,26.48-29.86C37.42,3.9,49.08,0,61.44,0C73.8,0,85.45,3.9,95.73,10.81L95.73,10.81z 
+                              M60.79,22.17l4.08,0.39c-1.45,2.18-2.31,4.82-2.31,7.67c0,7.48,5.86,13.54,13.1,13.54c2.32,0,4.5-0.62,6.39-1.72
+                              c0.03,0.47,0.05,0.94,0.05,1.42c0,11.77-9.54,21.31-21.31,21.31c-11.77,0-21.31-9.54-21.31-21.31
+                              C39.48,31.71,49.02,22.17,60.79,22.17L60.79,22.17L60.79,22.17z M109,41.89c-5.5-9.66-12.61-17.6-20.79-23.11
+                              c-8.05-5.42-17.15-8.48-26.77-8.48c-9.61,0-18.71,3.06-26.76,8.48c-8.18,5.51-15.29,13.45-20.8,23.11
+                              c5.5,9.66,12.62,17.6,20.8,23.1c8.05,5.42,17.15,8.48,26.76,8.48c9.62,0,18.71-3.06,26.77-8.48
+                              C96.39,59.49,103.5,51.55,109,41.89L109,41.89z"/>
+                          </svg>
+                        Preview
+                    </button>
+                    <button class="code-btn" onclick="window.open('https://github.com/ahmadiftme8/rspgame', '_blank');">
+                        <svg class="code-icon" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640"><path d="M319.988 7.973C143.293 7.973 0 151.242 0 327.96c0 141.392 91.678 261.298 218.826 303.63 16.004 2.964 21.886-6.957 21.886-15.414 0-7.63-.319-32.835-.449-59.552-89.032 19.359-107.8-37.772-107.8-37.772-14.552-36.993-35.529-46.831-35.529-46.831-29.032-19.879 2.209-19.442 2.209-19.442 32.126 2.245 49.04 32.954 49.04 32.954 28.56 48.922 74.883 34.76 93.131 26.598 2.882-20.681 11.15-34.807 20.315-42.803-71.08-8.067-145.797-35.516-145.797-158.14 0-34.926 12.52-63.485 32.965-85.88-3.33-8.078-14.291-40.606 3.083-84.674 0 0 26.87-8.61 88.029 32.8 25.512-7.075 52.878-10.642 80.056-10.76 27.2.118 54.614 3.673 80.162 10.76 61.076-41.386 87.922-32.8 87.922-32.8 17.398 44.08 6.485 76.631 3.154 84.675 20.516 22.394 32.93 50.953 32.93 85.879 0 122.907-74.883 149.93-146.117 157.856 11.481 9.921 21.733 29.398 21.733 59.233 0 42.792-.366 77.28-.366 87.804 0 8.516 5.764 18.473 21.992 15.354 127.076-42.354 218.637-162.274 218.637-303.582 0-176.695-143.269-319.988-320-319.988l-.023.107z"/></svg>
+
+                        Code
+                    </button>
+                </div>
+                
+            </div>
+
+            <div class="project-item8 p-item">
+                
+                <div class="project-img-container">
+                    <img src="images/projects/comingsoon.jpg" alt="">
+                </div>
+                <h4>Rock Session Paper Game</h4>
+                <p>
+                    A classic Rock-Paper-Scissors game with a sleek UI, interactive animations, and a responsive design. Enjoy multiple sessions with randomized outcomes for each round.
+                </p>
+
+                <div class="project-btn-container">
+                    <button class="preview-btn" onclick="window.open('https://ahmadiftme8.github.io/rspgame/', '_blank');">
+                        <svg class="eye-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 83.78">
+                            <path d="M95.73,10.81c10.53,7.09,19.6,17.37,26.48,29.86l0.67,1.22l-0.67,1.21c-6.88,12.49-15.96,22.77-26.48,29.86
+                              C85.46,79.88,73.8,83.78,61.44,83.78c-12.36,0-24.02-3.9-34.28-10.81C16.62,65.87,7.55,55.59,0.67,43.1L0,41.89l0.67-1.22
+                              c6.88-12.49,15.95-22.77,26.48-29.86C37.42,3.9,49.08,0,61.44,0C73.8,0,85.45,3.9,95.73,10.81L95.73,10.81z 
+                              M60.79,22.17l4.08,0.39c-1.45,2.18-2.31,4.82-2.31,7.67c0,7.48,5.86,13.54,13.1,13.54c2.32,0,4.5-0.62,6.39-1.72
+                              c0.03,0.47,0.05,0.94,0.05,1.42c0,11.77-9.54,21.31-21.31,21.31c-11.77,0-21.31-9.54-21.31-21.31
+                              C39.48,31.71,49.02,22.17,60.79,22.17L60.79,22.17L60.79,22.17z M109,41.89c-5.5-9.66-12.61-17.6-20.79-23.11
+                              c-8.05-5.42-17.15-8.48-26.77-8.48c-9.61,0-18.71,3.06-26.76,8.48c-8.18,5.51-15.29,13.45-20.8,23.11
+                              c5.5,9.66,12.62,17.6,20.8,23.1c8.05,5.42,17.15,8.48,26.76,8.48c9.62,0,18.71-3.06,26.77-8.48
+                              C96.39,59.49,103.5,51.55,109,41.89L109,41.89z"/>
+                          </svg>
+                        Preview
+                    </button>
+                    <button class="code-btn" onclick="window.open('https://github.com/ahmadiftme8/rspgame', '_blank');">
+                        <svg class="code-icon" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640"><path d="M319.988 7.973C143.293 7.973 0 151.242 0 327.96c0 141.392 91.678 261.298 218.826 303.63 16.004 2.964 21.886-6.957 21.886-15.414 0-7.63-.319-32.835-.449-59.552-89.032 19.359-107.8-37.772-107.8-37.772-14.552-36.993-35.529-46.831-35.529-46.831-29.032-19.879 2.209-19.442 2.209-19.442 32.126 2.245 49.04 32.954 49.04 32.954 28.56 48.922 74.883 34.76 93.131 26.598 2.882-20.681 11.15-34.807 20.315-42.803-71.08-8.067-145.797-35.516-145.797-158.14 0-34.926 12.52-63.485 32.965-85.88-3.33-8.078-14.291-40.606 3.083-84.674 0 0 26.87-8.61 88.029 32.8 25.512-7.075 52.878-10.642 80.056-10.76 27.2.118 54.614 3.673 80.162 10.76 61.076-41.386 87.922-32.8 87.922-32.8 17.398 44.08 6.485 76.631 3.154 84.675 20.516 22.394 32.93 50.953 32.93 85.879 0 122.907-74.883 149.93-146.117 157.856 11.481 9.921 21.733 29.398 21.733 59.233 0 42.792-.366 77.28-.366 87.804 0 8.516 5.764 18.473 21.992 15.354 127.076-42.354 218.637-162.274 218.637-303.582 0-176.695-143.269-319.988-320-319.988l-.023.107z"/></svg>
+
+                        Code
+                    </button>
+                </div>
+                
+            </div>
+
         </div>
     </section>
 
-    <section class="links-container">
-        <div class="links-item-container">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+
+    <section class="about-container">
+        <div class="about-content">
+            <img src="" alt="">
+            <h1>About</h1>
+            <div class="about-text-img-container">
+                <!-- <div class="about-img-container">
+                    <img src="images/ftme/ftm2.jpg" alt="">
+                </div> -->
+
+                <div class="about-text-container">
+                    <p>
+
+                        Hi, I’m Fatemeh Ahmadi, a 25-year-old graphic designer and front-end developer from Iran. I have 5 years of graphic design experience and 1 year in front-end development, focusing on creating responsive, visually engaging interfaces with HTML, CSS, and JavaScript. I'm passionate about blending creativity with technical skills, exploring programming-based automation, mobile videography, and storytelling to deliver unique, innovative solutions.
+
+
+                        <!-- 👋 <b>Greetings</b>  from a developer who <b>loves</b> to turn concepts into reality! 🚀 While I may be early in my career, my passion for front-end development has driven me to create websites that speak to users both <b>aesthetically</b> and <b>functionally</b> . 🎨 I’m here to learn, contribute, and make a <b>positive impact</b> in the digital world. 🌟🌐 -->
+                    </p>
+                </div>
+                
+            </div>
+            
         </div>
     </section>
 
@@ -533,6 +751,7 @@
 
     
     <script src="scripts/script.js"></script>
+    <script src="scripts/toggleListDeopDown.js"></script>
 
 </body>
 </html>
