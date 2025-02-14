@@ -1,11 +1,11 @@
 .custom-dropdown-container {
-    max-width: 800px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
 .smooth-dropdown-box {
     background: #2a2a2a;
-    border-radius: 12px;
+    border-radius: 0.8rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     overflow: hidden;
 }
