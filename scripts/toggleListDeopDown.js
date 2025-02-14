@@ -117,6 +117,25 @@ const quoteItems = [
     { title: "Local Quotes Fallback", description: "In case of API failure, provides quotes from a local database by utilizing a local quotes array as a backup." }
 ];
 
+
+
+//sign up for features 
+
+const formValidationItems = [
+    { title: "Full Name Input Field", description: "Requires users to input a name with a minimum of 3 characters and a maximum of 100 characters." },
+    { title: "Phone Number Input Field", description: "Accepts phone numbers following a specific pattern (Iranian phone numbers starting with '09' or '+989') and validates the input format." },
+    { title: "Email Input Field", description: "Users must enter a valid email address, and the input field uses HTML's email validation." },
+    { title: "Website URL Input Field", description: "Requires users to input a valid URL with the necessary format (e.g., 'http://example.com')." },
+    { title: "Password Field", description: "Validates password strength with the requirement of at least 8 characters, including one uppercase letter, one lowercase letter, and one number." },
+    { title: "Confirm Password Field", description: "Ensures that the confirmation password matches the original password and performs the same validation as the password field." },
+    { title: "Form Validation Using Constraint API", description: "Validates all form inputs before submission to check if fields are correctly filled out." },
+    { title: "Password Match Validation", description: "Compares the 'Password' and 'Confirm Password' fields to ensure they match, with visual error indicators when they don't match." },
+    { title: "Error and Success Messages", description: "Displays color-coded messages with corresponding border colors to indicate form validation status." },
+    { title: "Submit Button", description: "The form includes a 'Register' button that triggers form validation and processes form data submission if all fields are correctly filled out." },
+    { title: "Form Data Handling", description: "Upon successful form submission, the user's information (name, phone, email, website, password) is logged to the console." },
+    { title: "Event Handling", description: "Prevents the default form submission behavior using an event listener, and processes form data only if the form is valid." }
+ ];
+
 // Function to create a dropdown
 function createDropdown(containerId, items) {
     const container = document.getElementById(containerId);
@@ -152,4 +171,5 @@ document.addEventListener('DOMContentLoaded', () => {
     createDropdown('countDownFeatures', countDownItems);
     createDropdown('mathSpinnerFeatures', mathSpinnerItems);
     createDropdown('bookKeeperFeatures', bookKeeperItems);
+    createDropdown('signupFormFeatures', formValidationItems);
 });
