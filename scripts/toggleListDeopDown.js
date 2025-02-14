@@ -1,5 +1,5 @@
-// Customizable items array
-const dropdownItems = [
+// Music player features
+const musicItems = [
     { title: "Play/Pause", description: "Users can play or pause the current song with a button." },
     { title: "Song Info", description: "Displays song title and artist." },
     { title: "Album Art", description: "Shows the album art of the current song." },
@@ -12,11 +12,25 @@ const dropdownItems = [
     { title: "End of Song", description: "Automatically plays the next song when one ends." }
 ];
 
-// Function to populate items
-function populateDropdownItems(items) {
-    const itemsList = document.getElementById('itemsList');
-    itemsList.innerHTML = '';
+// Quote generator features
+const quoteItems = [
+    { title: "Random Quote Generation", description: "Provides a randomly selected quote from a vast collection using an API to fetch a variety of quotes, ensuring a diverse range of inspirations." },
+    { title: "Loading Indicator", description: "Displays a loading animation while fetching new quotes, showing a loader while hiding the quote container during the fetch process." },
+    { title: "Author Attribution", description: "Displays the name of the author along with the quote, ensuring that every quote comes with proper attribution." },
+    { title: "New Quote Button", description: "Users can get a new random quote by clicking a button, which triggers the fetch and display of a new quote on button click." },
+    { title: "Tweet Quote", description: "Allows users to share quotes on Twitter by opening a pre-filled tweet containing the quote and author." },
+    { title: "Local Quotes Fallback", description: "In case of API failure, provides quotes from a local database by utilizing a local quotes array as a backup." }
+];
+
+// Function to create a dropdown
+function createDropdown(containerId, items) {
+    const container = document.getElementById(containerId);
+    const header = container.querySelector('.smooth-dropdown-header');
+    const content = container.querySelector('.smooth-dropdown-content');
+    const icon = container.querySelector('.smooth-dropdown-icon');
+    const list = container.querySelector('.smooth-dropdown-list');
     
+    // Populate items
     items.forEach(item => {
         const li = document.createElement('li');
         li.className = 'smooth-dropdown-item';
@@ -24,24 +38,18 @@ function populateDropdownItems(items) {
             <span class="smooth-dropdown-item-title">${item.title}:</span>
             ${item.description}
         `;
-        itemsList.appendChild(li);
+        list.appendChild(li);
+    });
+
+    // Add click handler
+    header.addEventListener('click', () => {
+        content.classList.toggle('dropdown-active');
+        icon.classList.toggle('dropdown-active');
     });
 }
 
-// Initialize dropdown functionality
-function initializeDropdown() {
-    const dropdownHeader = document.querySelector('.smooth-dropdown-header');
-    const dropdownContent = document.querySelector('.smooth-dropdown-content');
-    const dropdownIcon = document.querySelector('.smooth-dropdown-icon');
-    
-    dropdownHeader.addEventListener('click', () => {
-        dropdownContent.classList.toggle('dropdown-active');
-        dropdownIcon.classList.toggle('dropdown-active');
-    });
-}
-
-// Initialize everything
+// Initialize both dropdowns
 document.addEventListener('DOMContentLoaded', () => {
-    populateDropdownItems(dropdownItems);
-    initializeDropdown();
+    createDropdown('musicFeatures', musicItems);
+    createDropdown('quoteFeatures', quoteItems);
 });

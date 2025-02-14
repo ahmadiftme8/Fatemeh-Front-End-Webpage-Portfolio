@@ -356,19 +356,23 @@
                     <h4>TuneBox : Music Player</h4>
 
                     <div class="custom-dropdown-wrapper">
-                        <div class="custom-dropdown-container">
-                            <div class="smooth-dropdown-box" id="customDropdown">
-                                <div class="smooth-dropdown-header">
-                                    <span class="smooth-dropdown-title">Key Features</span>
-                                    <svg class="smooth-dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
+                        <div class="custom-dropdown-wrapper">
+                            <div class="custom-dropdown-container">
+                                <!-- First Dropdown -->
+                                <div class="smooth-dropdown-box" id="musicFeatures">
+                                    <div class="smooth-dropdown-header">
+                                        <span class="smooth-dropdown-title">Music Player Features</span>
+                                        <svg class="smooth-dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="smooth-dropdown-content">
+                                        <ul class="smooth-dropdown-list" id="musicList">
+                                            <!-- Items will be populated by JavaScript -->
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="smooth-dropdown-content">
-                                    <ul class="smooth-dropdown-list" id="itemsList">
-                                        <!-- Items will be populated by JavaScript -->
-                                    </ul>
-                                </div>
+                    
                             </div>
                         </div>
                     </div>
@@ -432,10 +436,60 @@
                 <div class="project-img-container">
                     <img src="images/projects/02.jpg" alt="">
                 </div>
-                <h4>Quote Generator: QuoteQuirk</h4>
-                <p>
-                    QuoteQuirk: A sleek and stylish quote generator delivering instant inspiration with every click.
-                </p>
+
+                <div class="project-details-container">
+
+                    <h4>Quote Generator: QuoteQuirk</h4>
+                
+                    <div class="custom-dropdown-wrapper">
+                        <div class="custom-dropdown-wrapper">
+                            <div class="custom-dropdown-container">
+                            
+                                <!-- Second Dropdown -->
+                                <div class="smooth-dropdown-box" id="quoteFeatures">
+                                    <div class="smooth-dropdown-header">
+                                        <span class="smooth-dropdown-title">Quote Generator Features</span>
+                                        <svg class="smooth-dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="smooth-dropdown-content">
+                                        <ul class="smooth-dropdown-list" id="quoteList">
+                                            <!-- Items will be populated by JavaScript -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="lang-stat-wrapper">
+                        <h3 class="lang-stat-heading">Languages</h3>
+                        
+                        <div class="lang-stat-bar-wrapper">
+                            <div class="lang-stat-bar-segment lang-stat-color-javascript" style="width: 38.5%"></div>
+                            <div class="lang-stat-bar-segment lang-stat-color-css" style="width: 38.2%"></div>
+                            <div class="lang-stat-bar-segment lang-stat-color-html" style="width: 23.3%"></div>
+                        </div>
+                        
+                        <ul class="lang-stat-list">
+                            <li class="lang-stat-list-item">
+                                <span class="lang-stat-color-dot lang-stat-color-javascript"></span>
+                                JavaScript
+                                <span class="lang-stat-percentage">38.5%</span>
+                            </li>
+                            <li class="lang-stat-list-item">
+                                <span class="lang-stat-color-dot lang-stat-color-css"></span>
+                                CSS
+                                <span class="lang-stat-percentage">38.2%</span>
+                            </li>
+                            <li class="lang-stat-list-item">
+                                <span class="lang-stat-color-dot lang-stat-color-html"></span>
+                                HTML
+                                <span class="lang-stat-percentage">23.3%</span>
+                            </li>
+                        </ul>
+                    </div>
 
                 <div class="project-btn-container">
                     <button class="preview-btn" onclick="window.open('https://ahmadiftme8.github.io/quote-generator/', '_blank');">
@@ -458,7 +512,9 @@
                         Code
                     </button>
                 </div>
-                
+
+                </div>
+
             </div>
 
             <div class="project-item3 p-item">
