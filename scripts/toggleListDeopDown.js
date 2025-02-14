@@ -1,3 +1,21 @@
+//label generator
+
+const labelGeneratorItems = [
+    { title: "Excel Data Integration", description: "Integration with pandas for Excel data processing, enabling bulk label generation from structured spreadsheet input." },
+    { title: "Error Management System", description: "Robust error handling and logging system using Python's logging module for production-ready operation." },
+    { title: "Modular Architecture", description: "Modular class-based architecture with clear separation of concerns and initialization phases." },
+    { title: "RTL Text Support", description: "Support for right-to-left (RTL) text rendering using arabic-reshaper and bidi libraries for Persian language compatibility." },
+    { title: "High-Resolution Output", description: "High-resolution image generation using PIL (Python Imaging Library) with configurable DPI settings." },
+    { title: "Dynamic Text Layout", description: "Dynamic text wrapping and centering algorithms for optimal multiline text layout." },
+    { title: "File Management", description: "Clean file handling with automatic directory creation and input validation." },
+    { title: "Font Resource Handling", description: "Resource management for font loading with appropriate error handling." },
+    { title: "Batch Processing", description: "Efficient batch processing capabilities for generating multiple labels from Excel data." },
+    { title: "Configurable Dimensions", description: "Configurable image dimensions and text positioning using DPI-aware measurements." },
+    { title: "Input Sanitization", description: "Input sanitization and filename cleaning for safe file operations." },
+    { title: "Performance Tracking", description: "Professional-grade error reporting and success/failure tracking for batch operations." }
+ ];
+
+
 
 //book keeper
 
@@ -49,6 +67,26 @@ const countDownItems = [
     { title: "Seamless Transitions", description: "Smooth UI transitions between the form, countdown, and completion states." },
     { title: "Custom Time Units", description: "Calculates time accurately in days, hours, minutes, and seconds, using clear, reusable logic." },
     { title: "Modular Code", description: "Event listeners and logic are modular, making the code easy to maintain and extend." }
+ ];
+
+
+
+
+ //sign up for features 
+
+const signupFormItems = [
+    { title: "Full Name Input Field", description: "Requires users to input a name with a minimum of 3 characters and a maximum of 100 characters." },
+    { title: "Phone Number Input Field", description: "Accepts phone numbers following a specific pattern (Iranian phone numbers starting with '09' or '+989') and validates the input format." },
+    { title: "Email Input Field", description: "Users must enter a valid email address, and the input field uses HTML's email validation." },
+    { title: "Website URL Input Field", description: "Requires users to input a valid URL with the necessary format (e.g., 'http://example.com')." },
+    { title: "Password Field", description: "Validates password strength with the requirement of at least 8 characters, including one uppercase letter, one lowercase letter, and one number." },
+    { title: "Confirm Password Field", description: "Ensures that the confirmation password matches the original password and performs the same validation as the password field." },
+    { title: "Form Validation Using Constraint API", description: "Validates all form inputs before submission to check if fields are correctly filled out." },
+    { title: "Password Match Validation", description: "Compares the 'Password' and 'Confirm Password' fields to ensure they match, with visual error indicators when they don't match." },
+    { title: "Error and Success Messages", description: "Displays color-coded messages with corresponding border colors to indicate form validation status." },
+    { title: "Submit Button", description: "The form includes a 'Register' button that triggers form validation and processes form data submission if all fields are correctly filled out." },
+    { title: "Form Data Handling", description: "Upon successful form submission, the user's information (name, phone, email, website, password) is logged to the console." },
+    { title: "Event Handling", description: "Prevents the default form submission behavior using an event listener, and processes form data only if the form is valid." }
  ];
 
 
@@ -119,22 +157,7 @@ const quoteItems = [
 
 
 
-//sign up for features 
 
-const formValidationItems = [
-    { title: "Full Name Input Field", description: "Requires users to input a name with a minimum of 3 characters and a maximum of 100 characters." },
-    { title: "Phone Number Input Field", description: "Accepts phone numbers following a specific pattern (Iranian phone numbers starting with '09' or '+989') and validates the input format." },
-    { title: "Email Input Field", description: "Users must enter a valid email address, and the input field uses HTML's email validation." },
-    { title: "Website URL Input Field", description: "Requires users to input a valid URL with the necessary format (e.g., 'http://example.com')." },
-    { title: "Password Field", description: "Validates password strength with the requirement of at least 8 characters, including one uppercase letter, one lowercase letter, and one number." },
-    { title: "Confirm Password Field", description: "Ensures that the confirmation password matches the original password and performs the same validation as the password field." },
-    { title: "Form Validation Using Constraint API", description: "Validates all form inputs before submission to check if fields are correctly filled out." },
-    { title: "Password Match Validation", description: "Compares the 'Password' and 'Confirm Password' fields to ensure they match, with visual error indicators when they don't match." },
-    { title: "Error and Success Messages", description: "Displays color-coded messages with corresponding border colors to indicate form validation status." },
-    { title: "Submit Button", description: "The form includes a 'Register' button that triggers form validation and processes form data submission if all fields are correctly filled out." },
-    { title: "Form Data Handling", description: "Upon successful form submission, the user's information (name, phone, email, website, password) is logged to the console." },
-    { title: "Event Handling", description: "Prevents the default form submission behavior using an event listener, and processes form data only if the form is valid." }
- ];
 
 // Function to create a dropdown
 function createDropdown(containerId, items) {
@@ -171,5 +194,6 @@ document.addEventListener('DOMContentLoaded', () => {
     createDropdown('countDownFeatures', countDownItems);
     createDropdown('mathSpinnerFeatures', mathSpinnerItems);
     createDropdown('bookKeeperFeatures', bookKeeperItems);
-    createDropdown('signupFormFeatures', formValidationItems);
+    createDropdown('signupFormFeatures', signupFormItems);
+    createDropdown('labelGeneratorFeatures', labelGeneratorItems);
 });
