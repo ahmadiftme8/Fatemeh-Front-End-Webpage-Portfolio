@@ -1039,11 +1039,11 @@ section.projects-container .project-items-container .project-item {
 
 section.projects-container .project-items-container .p-item h4 {
     font-weight:600;
-    font-size:large;
+    font-size:1.3rem;
 
 color: var(--light-color);
-margin-left: 1rem;
 
+margin: 0.9rem 0 0.9rem 1rem;
 
 
     
