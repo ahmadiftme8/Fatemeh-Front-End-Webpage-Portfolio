@@ -1,3 +1,18 @@
+//math spinner game
+
+const mathSpinnerItems = [
+    { title: "Responsive UI", description: "Optimized for mobile-first design, ensuring smooth gameplay on various screen sizes." },
+    { title: "Dynamic Equation Generation", description: "Randomized math equations challenge users, maintaining engagement." },
+    { title: "Timer and Scoring System", description: "Accurate timer tracks responses; wrong answers add penalty seconds, impacting scores." },
+    { title: "Local Storage", description: "Stores the best score locally for persistent progress tracking." },
+    { title: "Game State Transitions", description: "Smooth transitions between splash screen, gameplay, and results." },
+    { title: "Penalty Handling", description: "Incorrect answers increase difficulty with penalty time added to the timer." },
+    { title: "UI Feedback", description: "Real-time feedback on user responses, enhancing the interactive experience." },
+    { title: "Modular Code Structure", description: "Clean, reusable functions for easy scalability and maintenance." },
+    { title: "Progressive Difficulty", description: "Gradually increasing challenges to keep users engaged and motivated." }
+ ];
+
+
 // count down project
 const countDownItems = [
     { title: "User-Friendly Input", description: "Simple form for entering event title and date, with an intuitive date picker for easy selection." },
@@ -113,4 +128,5 @@ document.addEventListener('DOMContentLoaded', () => {
     createDropdown('todoListFeatures', todoListItems);
     createDropdown('rspGameFeatures', rspGameFeatureItems);
     createDropdown('countDownFeatures', countDownItems);
+    createDropdown('mathSpinnerFeatures', mathSpinnerItems);
 });
