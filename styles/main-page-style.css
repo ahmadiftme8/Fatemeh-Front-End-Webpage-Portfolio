@@ -957,9 +957,10 @@ section.projects-container .project-items-container {
 
     display: flex;
     flex-direction: column;
+    flex: 1 1;
     
+
   
-  gap: 1rem; 
   
   
 }
@@ -969,22 +970,12 @@ section.projects-container .project-items-container {
     flex: 1 1 45%; /* 45% width allows for some gap between items */
     display: flex;
     flex-direction: row;
-    
     padding-left: 0;
     padding-right: 0;
     padding-top: 2rem;
     padding-bottom: 2rem;
-
     justify-content: center;
-    
-    
     gap: 2rem;
-
-
-   
-  border-bottom: 3px solid var(--secondary-bg-color);
-
-
 }
 
 
@@ -994,10 +985,12 @@ section.projects-container .project-items-container {
     border-radius: 1rem;
     padding: 20px;
     padding-top: 30px;
-    
     height: fit-content;
 
 
+
+
+    
 }
 
 .p-title-and-date-container{
@@ -1136,12 +1129,14 @@ border: 2px solid rgba(255, 255, 255, 0.32);
 
 
 
-@media screen and (max-width: 740px) and (min-width: 200px) {
+@media screen and (max-width: 740px) and (min-width: 300px) {
     
     .project-items-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
     .p-item{
@@ -1195,7 +1190,8 @@ border: 2px solid rgba(255, 255, 255, 0.32);
 
 @media screen and  (min-width: 550px) {
     .project-items-container {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         flex-wrap: wrap; /* Ensures wrapping */
         width: unset; /* or a specific width depending on your design */
     }
