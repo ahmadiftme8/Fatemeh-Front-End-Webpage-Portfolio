@@ -1320,13 +1320,48 @@ section.projects-container h1 {
 .p-title-and-date-container {
     padding: 1rem;
     background: rgb(57, 57, 57);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-date-group {
+    flex: 1;
+}
+
+
+.project-link-btn {
+    padding: 8px 8px;
+    background-color: #606060;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-left: 1rem;
+}
+
+.spanSvgArrowContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.project-link-btn:hover {
+    background-color: #909090;
 }
 
 /* Project title */
 .p-title-and-date-container h4 {
     margin: 0;
     padding: 0;
-    line-height: 1; /* Adjust this value if needed */
+    line-height: 0.5; /* Adjust this value if needed */
     font-size: 1.2rem;
     color: #cdcdcd;
 }
@@ -1370,7 +1405,21 @@ section.projects-container h1 {
     }
     
     .p-title-and-date-container h4 {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
+    }
+
+    .project-link-btn {
+        padding: 4px 4px;
+        background-color: #606060;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        font-size: 0.4rem;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+        white-space: nowrap;
+        margin-left: 0.5rem;
     }
 }
 
