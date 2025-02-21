@@ -1268,11 +1268,14 @@ section.projects-container {
     background-color: var(--main-bg-color);
     color: var(--light-color);
     scroll-behavior: smooth;
+    
 }
 
 section.projects-container h1 {
-    font-family: var(--title-font-family);
+    font-family: var(--passage-font-family);
     text-align: center;
+    font-weight: 100;
+    font-size: smaller;
 }
 
 
