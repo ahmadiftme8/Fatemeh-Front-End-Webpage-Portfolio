@@ -953,6 +953,16 @@ section.links-container .links-item-container a {
 }
 
 
+.links-container{
+    font-family: var(--title-font-family);
+    color: var(--light-color);
+    text-align: center;
+    min-height: fit-content;
+    margin-bottom: 2rem;
+
+}
+
+
 /* ========== Contact Section ========== */
 section.contact-container {
     background-color: var(--main-bg-color);
