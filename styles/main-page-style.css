@@ -161,29 +161,22 @@ header .title-container h6 span {
 
 }
 
-.down-arrow-container {
-fill:#e6e6e63c;
-position: absolute;
-bottom: 1rem;
+#down-arrow-container {
 
-display: flex;
+font-size: larger;
 justify-content: center;
 align-items: center;
-height: 20vh;
-padding-bottom: 1rem;
-
+align-self:center;
+position: absolute;
+bottom: 5rem;
 
 
 }
 
-.down-arrow-container svg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3rem;
-    height: 3rem;
-  
-    font-size: 2rem;
+#down-arrow-container svg{
+padding: 0;
+margin: 0;
+    
 }
 
 
@@ -451,7 +444,7 @@ header .nav .item-container .item4 p {
 
 
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 480px) {
     html{
         width: 100vw;
         position: relative;
@@ -489,16 +482,15 @@ header .nav .item-container .item4 p {
     
     header .title-container h1 {
         font-family: 'Cagke';
-        font-size: 2rem;
+        font-size: 3rem;
         margin: 0;
         line-height: 1.2;
-
-        
+        text-align: center;        
     }
 
     header .title-container h6 {
         margin: 0;
-        font-size: 0.5rem;
+        font-size: 1rem;
         font-family: var(--coding-font-style);
         font-weight: 200;
         opacity: 0.7;
@@ -513,6 +505,9 @@ header .nav .item-container .item4 p {
         
         transform: unset;
         width: 90%;
+        align-items: center;
+        justify-content: center;
+        padding: 1.2rem 0.3rem 1.2rem 0.3rem;
     }
 
     header .nav .item-container {
@@ -521,6 +516,9 @@ header .nav .item-container .item4 p {
         justify-content: center;
         align-items: center;
         font-family: var(--passage-font-family);
+       
+        justify-self: center;
+        align-self: center;
         
         
         
@@ -549,6 +547,10 @@ header .nav .item-container .item4 p {
         
         padding-bottom: 3rem;
         
+        }
+
+        #down-arrow-container{
+            bottom: 5%;
         }
     
 }
@@ -1272,10 +1274,8 @@ section.projects-container {
 }
 
 section.projects-container h1 {
-    font-family: var(--passage-font-family);
+    font-family: var(--title-font-family);
     text-align: center;
-    font-weight: 100;
-    font-size: smaller;
 }
 
 
