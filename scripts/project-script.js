@@ -212,7 +212,7 @@ const projectsData = [
 // Function to generate HTML for each project
 function generateProjectHTML(project) {
     return `
-        <section class="project-container">
+        <section id="${projectsData.id}" class="project-container">
             <div class="project-header">
                 <span class="project-name">${project.name}</span>
                 <div>
