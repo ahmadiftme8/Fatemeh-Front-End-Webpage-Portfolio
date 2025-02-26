@@ -2,13 +2,13 @@
 const projectLinks = {
     'Label Generator': './projects.html#1',
     'Music Player': './projects.html#2',
-    'Quote Generator': '/projects.html#8',
-    'ToDo List': '/projects.html#3',
-    'Rock Scissors Paper': '/projects.html#4',
-    'Fancy Count Down': '/projects.html#5',
-    'Math Sprint Game': '/projects.html#7',
-    'BookMark Keeper': '/projects.html#6',
-    'Sign Up Form': '/projects.html#9'
+    'Quote Generator': './projects.html#8',
+    'ToDo List': './projects.html#3',
+    'Rock Scissors Paper': './projects.html#4',
+    'Fancy Count Down': './projects.html#5',
+    'Math Sprint Game': './projects.html#7',
+    'BookMark Keeper': './projects.html#6',
+    'Sign Up Form': './projects.html#9'
 };
 
 
