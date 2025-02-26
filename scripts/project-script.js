@@ -3,7 +3,7 @@
 
 const projectsData = [
     {
-        id: 1,
+        id: 1 ,
         name: "Label Generator",
         date: "2024-10-19",
         author: "Fatemeh",
@@ -212,12 +212,12 @@ const projectsData = [
 // Function to generate HTML for each project
 function generateProjectHTML(project) {
     return `
-        <section id="${projectsData.id}" class="project-container">
+        <section id="${project.id}" class="project-container">
             <div class="project-header">
                 <span class="project-name">${project.name}</span>
                 <div>
                     <span class="project-date">${project.date}</span>
-                    <span class="project-auther">auther: ${project.author}</span>
+                    <span class="project-auther">Author: ${project.author}</span>
                 </div>
             </div>
             <div class="project-whole-content">
