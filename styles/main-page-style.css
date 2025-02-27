@@ -948,26 +948,12 @@ section.quote-container blockquote cite {
 
 
 /* ========== Links Section ========== */
-section.links-container {
-    height: 5rem;
-}
 
-section.links-container .links-item-container {
-}
-
-section.links-container .links-item-container a {
-}
-
-
-.links-container{
+.links-container h1{
     font-family: var(--title-font-family);
     color: var(--light-color);
     text-align: center;
-    min-height: fit-content;
-    margin-bottom: 2rem;
-
 }
-
 
 /* ========== Contact Section ========== */
 section.contact-container {
