@@ -1315,6 +1315,7 @@ section.projects-container h1 {
     transition: transform 0.3s ease;
     background: rgb(57, 57, 57);
     cursor: pointer;
+    font-family: var(--passage-font-family);
 }
 
 .p-item:hover {
@@ -1380,7 +1381,7 @@ section.projects-container h1 {
 .p-title-and-date-container h4 {
     margin: 0;
     padding: 0;
-    line-height: 0.5; /* Adjust this value if needed */
+    line-height: 1; /* Adjust this value if needed */
     font-size: 1.2rem;
     color: #cdcdcd;
 }

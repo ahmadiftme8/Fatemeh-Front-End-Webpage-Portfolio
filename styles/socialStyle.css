@@ -1,100 +1,135 @@
-.soial-btn-container {
-    display: inline-block;
-    position:relative;
-    top:50%;
-    left:50%;
-    -ms-transform:translate(-50%,-50%);
-    -webkit-transform:translate(-50%,-50%);
-    transform:translate(-50%,-50%);
+
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+
+
+
+@font-face {
+    font-family: 'Cagke';
+    src: url('../fonts/Cagke-Extrabold.eot');
+    src: url('../fonts/Cagke-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Cagke-Extrabold.woff2') format('woff2'),
+        url('../fonts/Cagke-Extrabold.woff') format('woff'),
+        url('../fonts/Cagke-Extrabold.ttf') format('truetype'),
+        url('../fonts/cagkeextrabold-8mpja.otf') format('opentype'),
+        url('../fonts/Cagke-Extrabold.svg#Cagke-Extrabold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Mono';
+    src: url('../ptmono/PTMono-Regular.eot');
+    src: url('../ptmono/PTMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../ptmono/PTMono-Regular.woff2') format('woff2'),
+        url('../ptmono/PTMono-Regular.woff') format('woff'),
+        url('../ptmono/PTMono-Regular.ttf') format('truetype'),
+        url('../ptmono/PTMono-Regular.svg#PTMono-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeueKabelW01-Regular';
+    src: url('./fonts/neue/02408ccd8efcf169db4e41d6e0551118.eot');
+    src: url('./fonts/neue/02408ccd8efcf169db4e41d6e0551118.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/neue/02408ccd8efcf169db4e41d6e0551118.woff2') format('woff2'),
+         url('./fonts/neue/02408ccd8efcf169db4e41d6e0551118.woff') format('woff'),
+         url('./fonts/neue/02408ccd8efcf169db4e41d6e0551118.ttf') format('truetype'),
+         url('./fonts/neue/02408ccd8efcf169db4e41d6e0551118.svg#NeueKabelW01-Regular') format('svg');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+
+
+
+:root {
+  /* Dark Mode (Default) */
+  --main-bg-color: #1E1E1E;
+  --secondary-bg-color: #424242;
+  --light-color: #E6E6E6;
+  --text-color: #E6E6E6;
+  --special-color: #11CC5C;
+
+  --title-font-family: 'Cagke', serif;
+  --passage-font-family:"Raleway", sans-serif;
+  --passage-font-weight: 100;
+  --coding-font-style: 'PT Mono', monospace;
+
+  --sections-margin: 6rem;
+
+  /* Light Mode (Optional) */
+ /*  --light-mode-main-bg-color: #E6E6E6;
+  --light-mode-secondary-bg-color: #FFFFFF;
+  --light-mode-dark-color: #1E1E1E;
+  --light-mode-text-color: #1E1E1E;
+  --light-mode-special-color: #11CC5C; */
+}
+
+.social-btn-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  
+}
+
+.social-btn-container a{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(63, 63, 63);
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.8rem 1rem 0.8rem;
+  font-family: var(--passage-font-family);
+  color: var(--light-color);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.8rem;
+
+}
+
+.social-btn-container a:hover{
+  background-color: rgb(83, 83, 83);
+  transform: translateY(-5px);
+  transition: all 0.2s ease-in-out;
+}
+
+.social-btn-container a :nth-child(1){
+  width: 3rem;
+  height: 3rem;
+ fill: rgb(196, 196, 196);
+ padding: 0;
+ margin: 0;
+ margin-bottom: 0.3rem;
+
+ 
+}
+
+
+
+@media screen and (max-width: 750px) {
+
+  .social-btn-container{
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    
+  }
+
+  .social-btn-container :nth-child(10){
+    display: none;
   }
   
-  /* Icons */
-  
-  .soial-btn-container a {
-    color:#fff;
-    background: gray;
-    border-radius:4px;
-    text-align:center;
-    text-decoration:none;
-    font-family:fontawesome;
-    position: relative;
-    display: inline-block;
-    width:40px;
-    height:28px;
-    padding-top:12px;
-    margin:0 2px;
-    -o-transition:all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    transition: all .5s;
-     -webkit-font-smoothing: antialiased;
-  }
-  
-  .soial-btn-container a:hover {
-    background: #afafaf;
-  }
-  
-  /* pop-up text */
-  
-  .soial-btn-container a span {
-    color:#666;
-    position:absolute;
-    font-family:sans-serif;
-    bottom:0;
-    left:-25px;
-    right:-25px;
-    padding:5px 7px;
-    z-index:-1;
-    font-size:14px;
-    border-radius:2px;
-    background:#fff;
-    visibility:hidden;
-    opacity:0;
-    -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  /* pop-up text arrow */
-  
-  .soial-btn-container a span:before {
-    content:'';
-    width: 0; 
-    height: 0; 
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #fff;
-    position:absolute;
-    bottom:-5px;
-    left:40px;
-  }
-  
-  /* text pops up when icon is in hover state */
-  
-  .soial-btn-container a:hover span {
-    bottom:50px;
-    visibility:visible;
-    opacity:1;
-  }
-  
-  /* font awesome icons */
-  
- /*  a:nth-of-type(1):before {
-  content:'\f09a';
-  }
-  a:nth-of-type(2):before {
-  content:'\f099';
-  }
-  a:nth-of-type(3):before {
-  content:'\f0d5';
-  }
-  a:nth-of-type(4):before {
-  content:'\f113';
-  }
-  a:nth-of-type(5):before {
-  content:'\f17d';
-  }
-  a:nth-of-type(6):before {
-  content:'\f1cb';
-  } */
+}
