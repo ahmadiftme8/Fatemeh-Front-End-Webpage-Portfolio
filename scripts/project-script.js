@@ -225,7 +225,7 @@ function generateProjectHTML(project) {
                     <div class="project-img-and-btn-container">
                         <img src="${project.image}" alt="${project.name}">
                         <div class="project-btn-container">
-                            <button onclick="window.open('${project.viewLink}', '_blank')">View</button>
+                            <button onclick="window.open('${project.viewLink}', '_blank')">Preview</button>
                             <button  onclick="window.open('${project.codeLink}', '_blank')" >code</button>
                         </div>
                     </div>

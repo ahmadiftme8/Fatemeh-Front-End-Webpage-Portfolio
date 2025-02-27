@@ -54,6 +54,11 @@
 
     html{
         scroll-behavior: smooth;
+        scroll-padding-top: 70px;
+    }
+
+    section{
+        padding-top: 40px;
     }
 
   body {
@@ -555,6 +560,7 @@ header .nav .item-container .item4 p {
     
 }
 /* general */
+
 section p{
     font-weight: var(--passage-font-weight);
     font-family: var(--passage-font-family);

@@ -54,6 +54,7 @@
 
     html{
         scroll-behavior: smooth;
+        scroll-padding-top: 70px;
     }
 
   body {
@@ -62,6 +63,10 @@
     justify-content: center;
     align-items: center;
   }
+
+  section{
+    padding-top: 40px;
+}
 
 
   :root {

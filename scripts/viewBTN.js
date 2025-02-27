@@ -14,6 +14,10 @@ const projectLinks = {
 
 
 
+
+
+
+
 // Function to add buttons to all project items
 function addProjectButtons() {
     // Get all project containers
@@ -55,5 +59,40 @@ function addProjectButtons() {
     });
 }
 
+
+// Function to make thumbnails clickable
+function makeThumbnailsClickable() {
+    // Get all project items (thumbnails)
+    const projectItems = document.querySelectorAll('.p-item');
+
+    projectItems.forEach(item => {
+        // Add click event listener to each p-item
+        item.addEventListener('click', function() {
+            // Get the project title from the h4 inside this p-item
+            const titleElement = item.querySelector('h4');
+            const projectTitle = titleElement.textContent;
+
+            // Get the corresponding URL from projectLinks
+            const destinationUrl = projectLinks[projectTitle];
+
+            // Navigate to the URL if it exists
+            if (destinationUrl) {
+                window.location.href = destinationUrl;
+            } else {
+                console.log(`No link found for project: ${projectTitle}`);
+            }
+        });
+    });
+}
+
 // Run the function when the document is loaded
-document.addEventListener('DOMContentLoaded', addProjectButtons);
+document.addEventListener('DOMContentLoaded', () => {
+    addProjectButtons(); // Your existing function
+    makeThumbnailsClickable(); // New function
+});
+
+
+
+
+
+

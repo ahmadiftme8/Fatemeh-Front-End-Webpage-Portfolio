@@ -7,6 +7,8 @@
             --light-accent: #858585;
         }
 
+    
+
         body {
             font-family: Arial, sans-serif;
             background-color: var(--darker-bg);
@@ -14,6 +16,8 @@
             margin: 0;
             padding: 20px;
         }
+
+        
 
         .project-container {
             background-color: var(--dark-bg);
