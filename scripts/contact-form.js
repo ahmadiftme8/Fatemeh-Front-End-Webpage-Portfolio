@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
       button.disabled = true;
       
       try {
-        const response = await fetch('http://localhost:3000/api/contact', {
+        // This URL points to your Vercel API endpoint
+        const response = await fetch('/api/contact', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
