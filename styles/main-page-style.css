@@ -354,7 +354,7 @@ header .nav .item-container .item4 p {
 }
 
 /* ========== hero media queies ========== */
-@media screen and (max-width: 576px) and (min-width: 350px) {
+@media screen and (max-width: 850px) and (min-width: 350px) {
 
     header .img-and-title-container {
         display: flex;
@@ -837,7 +837,7 @@ color: var(--light-color);
 }
 
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 850px) {
     .skill-content{
        
         width: 100%;
