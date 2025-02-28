@@ -1058,12 +1058,12 @@ textarea {
 
 /* Submit Button */
 button {
-    background-color: #888;
+    background-color: #444444;
     color: #fff;
     border: none;
     border-radius: 0.6rem;
-    padding: 10px 0;
-    font-size: 16px;
+    padding: 1rem 0 1rem 0;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -1396,8 +1396,9 @@ section.projects-container h1 {
     font-family: var(--passage-font-family);
     font-weight: 400;
     font-size: 1rem;
-    width: 500px;
-    padding: 0.5rem 0 0.5rem 0;
+    min-width: 600px;
+    margin: 2rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
     border-radius: 0.7rem;
     text-align: center;
 }
@@ -1405,5 +1406,13 @@ section.projects-container h1 {
 * {
     box-sizing: border-box;
   }
+
+  @media screen and (max-width: 700px) {
+
+    #success-message, #error-message{
+        min-width: 90%;
+    }
+    
+}
 
 
