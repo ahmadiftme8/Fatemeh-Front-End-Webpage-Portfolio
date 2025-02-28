@@ -248,14 +248,18 @@ div.n-item{
     display: flex;
     flex-direction: row;
     
+    
     gap: 0.5rem;
-    padding: 0 3rem;
+    padding: 1rem 3rem;
     color: var(--light-color);
     cursor: pointer;
     text-transform: uppercase;  
     
-    padding: 1rem 1rem;
-    
+}
+
+.n-item:nth-child(1), .n-item:nth-child(2){
+    border-right: 1px solid rgb(81, 81, 81);
+
 }
 
 .item-container :hover{
@@ -302,15 +306,13 @@ div.n-item{
    
 }
 
-div .n-item:last-child{
-    border: none;
-}
+
 
 .n-item{
     scroll-behavior: smooth;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -418,6 +420,11 @@ div .n-item:last-child{
         
         
     }
+
+    .n-item:nth-child(1), .n-item:nth-child(2){
+        border-right: 1px solid rgb(207, 207, 207);
+    
+    }
     
 }
 
@@ -486,14 +493,14 @@ div .n-item:last-child{
         transform: unset;
         width: 90%;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         padding: 1.2rem 0.3rem 1.2rem 0.3rem;
     }
 
     header .nav .item-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         
        
@@ -532,6 +539,11 @@ div .n-item:last-child{
 
         #down-arrow-container{
             bottom: 5%;
+        }
+
+        .n-item:nth-child(1), .n-item:nth-child(2){
+            border-right: 1px solid rgb(255, 255, 255);
+        
         }
     
 }
