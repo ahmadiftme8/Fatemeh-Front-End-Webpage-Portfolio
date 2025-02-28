@@ -1074,8 +1074,8 @@ input[type="text"], input[type="email"], textarea {
     background-color: #333;
     color: #fff;
     border: none;
-    border-radius: 25px;
-    padding: 10px 0px;
+    border-radius: 0.6rem;
+    padding: 1rem;
     width: 100%;
     font-size: 14px;
 }
@@ -1110,7 +1110,7 @@ button {
     background-color: #888;
     color: #fff;
     border: none;
-    border-radius: 25px;
+    border-radius: 0.6rem;
     padding: 10px 0;
     font-size: 16px;
     cursor: pointer;
@@ -1428,4 +1428,21 @@ section.projects-container h1 {
         margin-left: 0.5rem;
     }
 }
+
+
+
+
+#success-message, #error-message {
+    border: 2px solid rgb(57, 135, 57);
+    background-color: #11cc5c46;
+    color: white;
+    font-family: var(--passage-font-family);
+    font-weight: 400;
+    font-size: 1rem;
+    width: 500px;
+    padding: 0.5rem 0 0.5rem 0;
+    border-radius: 0.7rem;
+    text-align: center;
+}
+
 
