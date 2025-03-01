@@ -247,7 +247,7 @@ header .nav .item-container {
 div.n-item{
     display: flex;
     flex-direction: row;
-    
+    font-size:0.8em;
     
     gap: 0.5rem;
     padding: 1rem 3rem;
@@ -387,6 +387,7 @@ div.n-item{
     header nav.nav {
         width: 90%;
         transform: unset;
+        
     }
 
     header .nav .item-container {
@@ -402,9 +403,10 @@ div.n-item{
     div.n-item{
         display: flex;
         flex-direction: row;
-        padding: 0 1rem;
+        
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+        justify-content: space-between;
         
         
         
@@ -414,7 +416,7 @@ div.n-item{
         height: 0.7rem;
     }
     
-    .item-container p {
+    .item-container a {
         margin: 0;
         padding: 0;
         
@@ -424,6 +426,10 @@ div.n-item{
     .n-item:nth-child(1), .n-item:nth-child(2){
         border-right: 1px solid rgb(207, 207, 207);
     
+    }
+
+    .n-item a{
+        font-size: 0.8rem;
     }
     
 }
@@ -493,14 +499,16 @@ div.n-item{
         transform: unset;
         width: 90%;
         align-items: center;
-        justify-content: center;
-        padding: 1.2rem 0.3rem 1.2rem 0.3rem;
+        justify-content: space-between;
+        padding: 1.2rem 0rem 1.2rem 0rem;
+        
+        
     }
 
     header .nav .item-container {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         
        
@@ -515,7 +523,7 @@ div.n-item{
     div.n-item{
         display: flex;
         flex-direction: row;
-        padding: 0 0.3rem;
+        padding: 0 0.8rem 0 0.8rem;
         font-size: smaller;
         justify-content: space-between;
         
@@ -547,6 +555,15 @@ div.n-item{
         }
     
 }
+
+@media screen and (max-width:400px) {
+    .n-item a {
+        font-size: 0.7rem;
+    }
+    
+}
+
+
 /* general */
 
 section p{
