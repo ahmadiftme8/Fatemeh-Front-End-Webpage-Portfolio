@@ -1,3 +1,12 @@
+
+
+
+
+
+/*  ======view btn======= */
+
+
+
 // Define your project links in an object where keys are project titles
 const projectLinks = {
     'Label Generator': './projects.html#1',
