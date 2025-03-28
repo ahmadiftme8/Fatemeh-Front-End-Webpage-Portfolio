@@ -1,0 +1,42 @@
+.portfolios{
+    display: flex;
+    flex-direction: row;
+   
+    justify-content: space-around;
+    width: inherit;
+}
+
+.pfi{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 1rem;
+}
+
+.pfi img{
+    width: 100%;
+    border-radius: 2rem;
+    border: 3px solid rgb(65, 65, 65);
+}
+
+@media  screen and (max-width: 800px) {
+
+    .portfolios{
+        width: 95%;
+    }
+
+
+    .pfi{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        margin: 0.4rem;
+    }
+    
+    .pfi img{
+        width: 100%;
+        border-radius: 1.4rem;
+        border: 2px solid rgb(65, 65, 65);
+    }
+    
+}
