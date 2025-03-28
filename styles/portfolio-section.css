@@ -184,22 +184,28 @@
 
 @media  screen and (max-width: 800px) {
 
-    .portfolios{
+    .portfolio-section{
         width: 95%;
     }
 
 
     .pfi{
-        width: 200px;
-        height: 200px;
+        width:fit-content;
+        height: fit-content;
         position: relative;
         margin: 0.4rem;
+        border-radius: 1rem;
+        border: 2px solid rgb(65, 65, 65);
     }
     
     .pfi img{
         width: 100%;
-        border-radius: 1.4rem;
-        border: 2px solid rgb(65, 65, 65);
+        height: 100%;
+        border-radius: 0.7rem;
+      
+        display: flex;
+        
     }
+
     
 }
