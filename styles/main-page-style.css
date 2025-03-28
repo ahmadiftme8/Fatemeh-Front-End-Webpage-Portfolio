@@ -254,10 +254,11 @@ div.n-item{
     color: var(--light-color);
     cursor: pointer;
     text-transform: uppercase;  
+    text-align: center;
     
 }
 
-.n-item:nth-child(1), .n-item:nth-child(2){
+.n-item:nth-child(1), .n-item:nth-child(2), .n-item:nth-child(3) {
     border-right: 1px solid rgb(81, 81, 81);
 
 }
