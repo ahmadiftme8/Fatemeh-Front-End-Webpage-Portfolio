@@ -32,3 +32,12 @@
     color: #333;
     text-align: center;
   }
+
+
+
+  #loading {
+    font-size: 16px;
+    color: #bebebe;
+    padding: 20px;
+    text-align: center;
+  }
