@@ -1,0 +1,24 @@
+{
+  "name": "fatemeh-front-end-webpage-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmadiftme8/Fatemeh-Front-End-Webpage-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmadiftme8/Fatemeh-Front-End-Webpage-Portfolio/issues"
+  },
+  "homepage": "https://github.com/ahmadiftme8/Fatemeh-Front-End-Webpage-Portfolio#readme",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "express": "^4.21.2"
+  }
+}
