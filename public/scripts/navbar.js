@@ -12,14 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 <a href="index.html">Home</a>
             </div>
             <div class="n-item">
-                <a href="contact.html">Contact</a>
+                <a href="#social-media">Contact</a>
             </div>
             <div class="n-item dropdown">
                 <a href="#" class="dropbtn">Portfolios</a>
                 <div class="dropdown-content" id="dropdown-content">
-                    <a href="projectParent.html">Coding</a>
-                    <a target="_blank" href="graphicDesign">Graphics</a>
-                    <a target="_blank" href="videoEdit">Videos</a>
+                    <a href="coding-projects-parent.html">Coding</a>
+                    <a target="_blank" href="graphic-design.html">Graphics</a>
+                    <a target="_blank" href="video-editing.html">Videos</a>
                 </div>
             </div>
         </div>
