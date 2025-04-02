@@ -1,15 +1,18 @@
+// File: server.js
 const express = require('express');
 const axios = require('axios');
 const app = express();
-const port = 3000;
+const port = 5502; // Match your current port
 
 // In-memory cache
 const cache = new Map();
 
-const accessToken = 'f42cdcdd9126434f6b33432ae79d02cad2c7b1de38b5d5a68d7d1f5d2e993fcd'; // Ensure this is your actual token
+const accessToken = 'f42cdcdd9126434f6b33432ae79d02cad2c7b1de38b5d5a68d7d1f5d2e993fcd';
 
+// Serve static files from public directory
 app.use(express.static('public'));
 
+// API endpoint for shots
 app.get('/api/shots', async (req, res) => {
   try {
     const page = parseInt(req.query.page) || 1;
@@ -33,7 +36,7 @@ app.get('/api/shots', async (req, res) => {
     });
 
     const shots = response.data;
-    const hasMore = shots.length === perPage; // If we got 30 shots, there might be more
+    const hasMore = shots.length === perPage;
 
     const data = {
       shots: shots,
@@ -49,7 +52,7 @@ app.get('/api/shots', async (req, res) => {
     if (error.response) {
       console.error('Dribbble API response:', error.response.status, error.response.data);
     }
-    res.status(500).send('Error fetching shots');
+    res.status(500).json({ error: 'Error fetching shots' });
   }
 });
 
