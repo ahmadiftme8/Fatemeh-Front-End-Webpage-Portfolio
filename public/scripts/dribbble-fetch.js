@@ -1,3 +1,4 @@
+// File: public/js/dribbble-fetch.js
 let currentPage = 1;
 let isLoading = false;
 let hasMore = true;
@@ -24,12 +25,15 @@ async function fetchShots(page) {
     shots.forEach(shot => {
       const shotElement = document.createElement('div');
       shotElement.className = 'shot';
+      
+      // Create a proper structure for the shot
       shotElement.innerHTML = `
-        <a href="${shot.html_url}" target="_blank">
-          <img src="${shot.images.normal}" alt="${shot.title}" loading="lazy">
+        <a href="${shot.html_url}" target="_blank" class="shot-link">
+          <img src="${shot.images.normal}" alt="${shot.title}" class="shot-image">
+          <div class="shot-title">${shot.title}</div>
         </a>
-        <div class="shot-title">${shot.title}</div>
       `;
+      
       gallery.appendChild(shotElement);
     });
 
@@ -48,35 +52,38 @@ async function fetchShots(page) {
 }
 
 // Initial load
-fetchShots(currentPage);
-
-// Intersection Observer for infinite scrolling
-const loadingIndicator = document.getElementById('loading');
-if (!loadingIndicator) {
-  console.error('Loading indicator not found in the DOM!');
-}
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach(entry => {
-      console.log('Intersection Observer triggered:', {
-        isIntersecting: entry.isIntersecting,
-        isLoading: isLoading,
-        hasMore: hasMore
-      });
-
-      if (entry.isIntersecting && !isLoading && hasMore) {
-        console.log('Loading indicator is visible. Fetching next page...');
-        currentPage++;
-        fetchShots(currentPage);
-      }
-    });
-  },
-  {
-    root: null,
-    rootMargin: '200px',
-    threshold: 0
+document.addEventListener('DOMContentLoaded', function() {
+  fetchShots(currentPage);
+  
+  // Intersection Observer for infinite scrolling
+  const loadingIndicator = document.getElementById('loading');
+  if (!loadingIndicator) {
+    console.error('Loading indicator not found in the DOM!');
+    return;
   }
-);
 
-observer.observe(loadingIndicator);
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        console.log('Intersection Observer triggered:', {
+          isIntersecting: entry.isIntersecting,
+          isLoading: isLoading,
+          hasMore: hasMore
+        });
+
+        if (entry.isIntersecting && !isLoading && hasMore) {
+          console.log('Loading indicator is visible. Fetching next page...');
+          currentPage++;
+          fetchShots(currentPage);
+        }
+      });
+    },
+    {
+      root: null,
+      rootMargin: '200px',
+      threshold: 0
+    }
+  );
+
+  observer.observe(loadingIndicator);
+});
