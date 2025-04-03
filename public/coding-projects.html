@@ -7,6 +7,7 @@
     
   <link rel="stylesheet" href="styles/coding-projects.css"> <!-- Renamed from project-style.css -->
   <link rel="stylesheet" href="styles/social-media.css">
+  <link rel="stylesheet" href="styles/navbar.css">
 </head>
 <body>
 
@@ -30,10 +31,38 @@
 
         <header class="mian-header">
     
-            <!-- Navbar will be injected here by JavaScript -->
-        <nav class="nav" id="navbar">
-            <!-- JavaScript will populate this -->
-        </nav>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/ftme/logo.png" alt=""></a>
+                </div>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#social-media" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Portfolio <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a href="graphic-design.html" target="_blank" class="dropdown-link">Graphic Design</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="video-editing.html" target="_blank" class="dropdown-link">Video Editing</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="coding-projects-parent.html" class="dropdown-link">Web Development</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
     
             <div class="img-and-title-container">
                 
@@ -245,6 +274,7 @@
 
     
     <script src="scripts/coding-projects-page.js"></script>
+    <script src="scripts/navbar.js"></script>
     
 </body>
 </html>

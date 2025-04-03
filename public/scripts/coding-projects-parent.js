@@ -9,15 +9,15 @@
 
 // Define your project links in an object where keys are project titles
 const projectLinks = {
-    'Label Generator': './projects.html#1',
-    'Music Player': './projects.html#2',
-    'Quote Generator': './projects.html#8',
-    'ToDo List': './projects.html#3',
-    'Rock Scissors Paper': './projects.html#4',
-    'Fancy Count Down': './projects.html#5',
-    'Math Sprint Game': './projects.html#7',
-    'BookMark Keeper': './projects.html#6',
-    'Sign Up Form': './projects.html#9'
+    'Label Generator': './coding-projects.html#1',
+    'Music Player': './coding-projects.html#2',
+    'Quote Generator': './coding-projects.html#8',
+    'ToDo List': './coding-projects.html#3',
+    'Rock Scissors Paper': './coding-projects.html#4',
+    'Fancy Count Down': './coding-projects.html#5',
+    'Math Sprint Game': './coding-projects.html#7',
+    'BookMark Keeper': './coding-projects.html#6',
+    'Sign Up Form': './coding-projects.html#9'
 };
 
 
