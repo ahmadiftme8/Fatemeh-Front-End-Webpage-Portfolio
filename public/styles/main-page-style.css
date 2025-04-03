@@ -280,7 +280,7 @@ header {
   }
   
   .ball:nth-child(odd) {
-      color: #3a3a3a;
+      color: #242424;
   }
   
   .ball:nth-child(even) {
