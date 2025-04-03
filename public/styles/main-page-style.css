@@ -272,6 +272,28 @@ header {
   }
 
 
+  @media screen and (max-width:500px) {
+
+    .title-container h1 {
+      
+       
+        font-size: 1.8em !important;
+
+    }
+
+
+
+    
+    .title-container h6 {
+        font-size: 0.9rem !important;
+  
+    }
+
+
+
+}
+
+
 /* general */
 
 section p{
