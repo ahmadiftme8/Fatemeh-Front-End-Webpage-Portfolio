@@ -177,7 +177,7 @@ justify-content: center;
 align-items: center;
 align-self:center;
 position: absolute;
-bottom: 5rem;
+bottom: 7rem;
 
 
 }
@@ -187,6 +187,10 @@ padding: 0;
 margin: 0;
     
 }
+
+
+
+
 
 
 /* fade in and out the arrow div */
@@ -402,7 +406,11 @@ header {
 
 
 /* general */
-
+    h2{
+        font-family: var(--title-font-family);
+        color: var(--light-color);
+        margin-bottom: 2rem;
+       font-size:xx-large;}
 section p{
     font-weight: var(--passage-font-weight);
     font-family: var(--passage-font-family);
