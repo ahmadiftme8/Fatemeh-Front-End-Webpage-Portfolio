@@ -1,12 +1,13 @@
 // File: api/shots.js
 const axios = require('axios');
 
-// In-memory cache (note: this will reset between function invocations in serverless)
+// In-memory cache
 const cache = new Map();
 
 const accessToken = 'f42cdcdd9126434f6b33432ae79d02cad2c7b1de38b5d5a68d7d1f5d2e993fcd';
 
-export default async function handler(req, res) {
+// Make sure this function is exported correctly for Vercel
+module.exports = async (req, res) => {
   try {
     const page = parseInt(req.query.page) || 1;
     const perPage = 30;
@@ -29,7 +30,7 @@ export default async function handler(req, res) {
     });
 
     const shots = response.data;
-    const hasMore = shots.length === perPage; // If we got 30 shots, there might be more
+    const hasMore = shots.length === perPage;
 
     const data = {
       shots: shots,
@@ -47,4 +48,4 @@ export default async function handler(req, res) {
     }
     res.status(500).json({ error: 'Error fetching shots' });
   }
-}
+};
