@@ -6,6 +6,30 @@
     font-family: "Poppins", sans-serif;
 }
 
+#graphic-design-title{
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  text-align: center;
+
+}
+
+
+
+/* ===========hero section style========== */
+
+
+.ftme-style-text{
+  color: transparent;           /* Removes fill color */
+  -webkit-text-stroke: 0.5px rgb(255, 255, 255); /* Outline width & color */
+  font-size: 5.1rem;
+  font-weight: 900;
+
+}
+
+
+
 
 /* Base styles for the gallery */
 #gallery {
@@ -98,7 +122,7 @@
 }
 
 /* Mobile: 1 column (below 768px) */
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   #gallery {
     grid-template-columns: 1fr; /* 1 column */
     gap: 10px;
@@ -119,4 +143,26 @@
     font-size: 12px;
     padding: 10px;
   }
+
+
+
+  .ftme-style-text{
+    font-size: 1.4em;
+  }
+
+
+
+  #graphic-design-title{
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+  
+  }
+
+  #project-word-style{
+    font-size: 3.3rem;
+  }
+
+  
 }
