@@ -27,7 +27,7 @@ function fadeout(){
        
        
 fadeDiv.style.display = 'none';
-    }, 6000);
+    }, 20000000);
 
     
 }

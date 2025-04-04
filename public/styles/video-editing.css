@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    
+    font-family: "Poppins", sans-serif;
+}
+
+#video-editing-title{
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+
+
+/* ===========hero section style========== */
+
+
+.ftme-style-text{
+  color: transparent;           /* Removes fill color */
+  -webkit-text-stroke: 0.5px rgb(255, 255, 255); /* Outline width & color */
+  font-size: 5.1rem;
+  font-weight: 900;
+
+}
+
+
+@media screen and (max-width:800px) {
+
+    .title-container h1{
+        width: 250px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: unset;
+      }
+    
+    
+    .ftme-style-text{
+        font-size: 2.6rem;
+        
+        margin: 0;
+        padding: 0;
+      }
+    
+    
+    
+      #video-editing-title{
+    
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        font-size: unset;
+        
+
+
+        
+      
+      }
+
+
+      .v-e-w{
+        
+        font-size:1.9rem;
+        text-wrap: nowrap;
+        
+        margin: 0;
+        padding: 0;
+        
+
+      }
+    
+      #project-word-style{
+        font-size: 3.5rem;
+       
+      }
+
+      
+    
+}
