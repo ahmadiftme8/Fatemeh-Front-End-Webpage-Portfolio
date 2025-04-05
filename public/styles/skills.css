@@ -7,4 +7,43 @@
     row-gap: 0.5rem;
     flex-direction: row;
     gap: 0.5rem;
+    align-items: center;
+    font-size:12px;
+}
+
+.skill-svg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-amount, .skill-name{
+    font-size: ;
+
+}
+
+
+.skills-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.skills-content{
+    display: flex;
+    width: 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+
+@media screen and (max-width:800px) {
+
+    .skills-content{
+        width: 90%;
+    }
+
+
+    
 }
