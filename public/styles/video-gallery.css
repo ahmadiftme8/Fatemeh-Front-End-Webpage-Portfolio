@@ -1,10 +1,4 @@
-/* body {
-    background-color: #111;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-} */
+
 
 /* Gallery Container */
 .gallery-container {
@@ -57,7 +51,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Low-opacity black layer */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -114,6 +108,53 @@
     overflow: hidden;
 }
 
+/* Video Container for 9:16 Aspect Ratio */
+.video-container-9-16 {
+    position: relative;
+    width: 100%;
+    padding-top: 177.78%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Ensure the iframe is always visible */
+.video-container-9-16 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Mobile Portrait */
+@media (max-width: 767px) and (orientation: portrait) {
+    .video-container-9-16 {
+        max-width: 100%;
+        padding-top: 177.78%;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 767px) and (orientation: landscape) {
+    .video-container-9-16 {
+        max-width: 80%;
+        padding-top: 177.78%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .video-container-9-16 {
+        max-width: 600px;
+        padding-top: 177.78%;
+    }
+
+    .video-modal-content {
+        max-width: 900px;
+    }
+}
+
 .close-button {
     position: absolute;
     top: 10px;
@@ -122,10 +163,4 @@
     color: #fff;
     cursor: pointer;
     z-index: 1001;
-}
-
-/* Video Player */
-#videoContainer {
-    width: 100%;
-    height: auto;
 }

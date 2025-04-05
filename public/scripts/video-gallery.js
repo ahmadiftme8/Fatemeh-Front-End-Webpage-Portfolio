@@ -1,43 +1,71 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Video data array (add new videos here)
-    const videos = [
-        {
-            thumbnail: 'thumbnail1.jpg',
-            title: 'Cinematic Travel Montage',
-            description: 'Video Editing • Motion Graphics',
-            videoId: '6057428475001' // Replace with actual video ID
-        },
-        {
-            thumbnail: 'thumbnail2.jpg',
-            title: 'Cinematic Travel Montage',
-            description: 'Video Editing • Motion Graphics',
-            videoId: '6057428475002' // Replace with actual video ID
-        },
-        {
-            thumbnail: 'thumbnail3.jpg',
-            title: 'Cinematic Travel Montage',
-            description: 'Video Editing • Motion Graphics',
-            videoId: '6057428475003' // Replace with actual video ID
-        },
-        {
-            thumbnail: 'thumbnail4.jpg',
-            title: 'Cinematic Travel Montage',
-            description: 'Video Editing • Motion Graphics',
-            videoId: '6057428475004' // Replace with actual video ID
-        }
-        // Add more videos here as needed
+document.addEventListener('DOMContentLoaded', async function () {
+    // Initial video IDs (we'll fetch metadata dynamically)
+    const videoIds = [
+        { vimeoId: '1072815418', vimeoHash: '41ceb11e27' },
+        { vimeoId: '1072815418', vimeoHash: '41ceb11e27' },
+        { vimeoId: '1072815418', vimeoHash: '41ceb11e27' },
+        { vimeoId: '1072815418', vimeoHash: '41ceb11e27' }
     ];
 
     const galleryContainer = document.getElementById('galleryContainer');
     const videoModal = document.getElementById('videoModal');
     const closeModal = document.getElementById('closeModal');
-    const player = videojs.getPlayer('myPlayerID');
+    const vimeoPlayer = document.getElementById('vimeoPlayer');
+
+    // Debugging: Check if elements are found
+    console.log('Gallery Container:', galleryContainer);
+    console.log('Video Modal:', videoModal);
+    console.log('Close Modal Button:', closeModal);
+    console.log('Vimeo Player:', vimeoPlayer);
+
+    if (!galleryContainer || !videoModal || !closeModal || !vimeoPlayer) {
+        console.error('One or more required elements not found. Check your HTML IDs.');
+        return;
+    }
+
+    // Function to fetch video metadata from Vimeo oEmbed API
+    async function fetchVimeoMetadata(vimeoId) {
+        try {
+            const response = await fetch(`https://vimeo.com/api/oembed.json?url=https://vimeo.com/${vimeoId}`);
+            if (!response.ok) {
+                throw new Error(`Failed to fetch metadata for Vimeo ID ${vimeoId}: ${response.statusText}`);
+            }
+            const data = await response.json();
+            return {
+                thumbnail: data.thumbnail_url.replace('_640', '_200'), // Use medium thumbnail (200px wide)
+                title: data.title || 'Untitled Video',
+                description: data.description || 'No description available.'
+            };
+        } catch (error) {
+            console.error(error);
+            // Fallback metadata in case the API call fails
+            return {
+                thumbnail: '/Videos/thumbnails/01.jpg', // Fallback thumbnail
+                title: 'Error: Video Title Unavailable',
+                description: 'Error: Video Description Unavailable'
+            };
+        }
+    }
+
+    // Fetch metadata for all videos and store in an array
+    const videos = await Promise.all(
+        videoIds.map(async (video, index) => {
+            const metadata = await fetchVimeoMetadata(video.vimeoId);
+            return {
+                ...video,
+                ...metadata,
+                index // Add index for unique identification
+            };
+        })
+    );
 
     // Dynamically generate gallery items
-    videos.forEach((video, index) => {
+    videos.forEach((video) => {
         const videoItem = document.createElement('div');
         videoItem.classList.add('video-item');
-        videoItem.setAttribute('data-video-id', video.videoId);
+        videoItem.setAttribute('data-vimeo-id', video.vimeoId);
+        videoItem.setAttribute('data-vimeo-hash', video.vimeoHash || '');
+        videoItem.setAttribute('data-index', video.index);
 
         videoItem.innerHTML = `
             <div class="thumbnail-wrapper">
@@ -54,68 +82,53 @@ document.addEventListener('DOMContentLoaded', function () {
         galleryContainer.appendChild(videoItem);
     });
 
-    // Initialize the player
-    player.ready(function () {
-        const playerContainer = document.getElementById('videoContainer');
-        const isMobile = (/Android|webOS|iPhone|BlackBerry|Windows Phone|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent)) ? true : false;
-
-        if (isMobile) {
-            // Define a modal close button
-            const CloseModal = videojs.getComponent('button');
-            const CloseModal_ = videojs.extend(CloseModal, {
-                constructor: function () {
-                    CloseModal.apply(this, arguments);
-                    this.addClass('vjs-close-modal');
-                    this.controlText('Close video');
-                },
-                handleClick: function () {
-                    playerContainer.style.maxWidth = '286px';
-                    videoModal.style.display = 'none';
-                    player.pause();
-                }
-            });
-
-            videojs.registerComponent('CloseModal', CloseModal_);
-            player.addChild('CloseModal', {});
-
-            // When playback begins, enter full width mode
-            player.on('play', function () {
-                playerContainer.style.width = '100%';
-                playerContainer.style.maxWidth = '';
-            });
-        }
-
-        // When playback ends, reset
-        player.on('ended', function () {
-            playerContainer.style.maxWidth = '286px';
-            player.currentTime(0);
-            videoModal.style.display = 'none';
-        });
-    });
-
     // Open modal when a video item is clicked
     const videoItems = document.querySelectorAll('.video-item');
-    videoItems.forEach(item => {
+    console.log('Video Items Found:', videoItems.length);
+    if (videoItems.length === 0) {
+        console.error('No video items found. Check if the gallery items are being generated correctly.');
+        return;
+    }
+
+    videoItems.forEach((item) => {
         item.addEventListener('click', function () {
-            const videoId = item.getAttribute('data-video-id');
-            // Dynamically update the video ID in the player
-            player.src({ type: 'video/mp4', src: `https://players.brightcove.net/1752604059001/tUnbGgd07_default/index.html?videoId=${videoId}` });
+            const index = item.getAttribute('data-index');
+            const video = videos[index];
+            console.log(`Thumbnail ${parseInt(index) + 1} clicked, opening modal`);
+            const vimeoId = video.vimeoId;
+            const vimeoHash = video.vimeoHash;
+            let embedUrl = `https://player.vimeo.com/video/${vimeoId}?autoplay=1&muted=1&title=0&byline=0&portrait=0`;
+            if (vimeoHash) {
+                embedUrl += `&h=${vimeoHash}`;
+            }
+            console.log('Embed URL:', embedUrl);
+            if (vimeoPlayer) {
+                vimeoPlayer.src = embedUrl;
+            } else {
+                console.error('Vimeo player iframe not found. Check the ID "vimeoPlayer" in your HTML.');
+            }
             videoModal.style.display = 'flex';
-            player.play();
+            console.log('Modal display set to flex. Current display:', videoModal.style.display);
         });
     });
 
     // Close modal when the close button is clicked
     closeModal.addEventListener('click', function () {
+        console.log('Close button clicked');
         videoModal.style.display = 'none';
-        player.pause();
+        if (vimeoPlayer) {
+            vimeoPlayer.src = '';
+        }
     });
 
     // Close modal when clicking outside the video
     videoModal.addEventListener('click', function (e) {
         if (e.target === videoModal) {
+            console.log('Clicked outside modal');
             videoModal.style.display = 'none';
-            player.pause();
+            if (vimeoPlayer) {
+                vimeoPlayer.src = '';
+            }
         }
     });
 });
