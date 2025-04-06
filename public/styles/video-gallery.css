@@ -17,7 +17,7 @@ body {
 .loader {
     width: 60px;
     aspect-ratio: 1;
-    border: 15px solid #ddd;
+    border: 15px solid #333333;
     border-radius: 50%;
     position: absolute;
     top: 50%;

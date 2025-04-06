@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', async function () {
-    // Initial video IDs (we'll fetch metadata dynamically)
+    // Updated video IDs with all your videos
     const videoIds = [
-        { vimeoId: '1072815418', vimeoHash: '41ceb11e27' },
-        { vimeoId: '1072815418', vimeoHash: '41ceb11e27' },
-        { vimeoId: '1072815418', vimeoHash: '41ceb11e27' },
-        { vimeoId: '1072815418', vimeoHash: '41ceb11e27' }
+        { vimeoId: '1072815418', vimeoHash: '41ceb11e27' }, // Touch Burger
+        { vimeoId: '1072914953', vimeoHash: '' },           // A Python Story
+        { vimeoId: '1072916681', vimeoHash: '' },           // Art Gallery Showcase
+        { vimeoId: '1072917602', vimeoHash: '' },           // Art Group
+        { vimeoId: '1072918579', vimeoHash: '' },           // If My Life Was a Movie
+        { vimeoId: '1072921000', vimeoHash: '' }            // Travel Cinematic Videography
     ];
 
     const galleryContainer = document.getElementById('galleryContainer');
@@ -15,7 +17,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     const vpnPopup = document.getElementById('vpnPopup');
     const vpnCloseButton = document.getElementById('vpnCloseButton');
 
-    // Debugging: Check if elements are found
     console.log('Gallery Container:', galleryContainer);
     console.log('Video Modal:', videoModal);
     console.log('Close Modal Button:', closeModal);
@@ -29,14 +30,12 @@ document.addEventListener('DOMContentLoaded', async function () {
         return;
     }
 
-    // Show loader initially
     loader.classList.remove('hidden');
 
-    // Function to fetch video metadata from Vimeo oEmbed API with timeout
     async function fetchVimeoMetadata(vimeoId) {
         try {
             const controller = new AbortController();
-            const timeoutId = setTimeout(() => controller.abort(), 5000); // 5-second timeout
+            const timeoutId = setTimeout(() => controller.abort(), 5000);
             const response = await fetch(`https://vimeo.com/api/oembed.json?url=https://vimeo.com/${vimeoId}`, {
                 signal: controller.signal
             });
@@ -56,12 +55,11 @@ document.addEventListener('DOMContentLoaded', async function () {
                 thumbnail: '/Videos/thumbnails/01.jpg',
                 title: 'Error: Video Title Unavailable',
                 description: 'Error: Video Description Unavailable',
-                failed: true // Flag to indicate failure
+                failed: true
             };
         }
     }
 
-    // Check Vimeo availability
     let vimeoBlocked = false;
     const testMetadata = await fetchVimeoMetadata(videoIds[0].vimeoId);
     if (testMetadata.failed) {
@@ -69,7 +67,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         loader.classList.add('hidden');
         vpnPopup.style.display = 'flex';
     } else {
-        // Fetch metadata for all videos and store in an array
         const videos = await Promise.all(
             videoIds.map(async (video, index) => {
                 const metadata = await fetchVimeoMetadata(video.vimeoId);
@@ -81,10 +78,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             })
         );
 
-        // Hide loader once content is loaded
         loader.classList.add('hidden');
 
-        // Dynamically generate gallery items with white SVG play button
         videos.forEach((video) => {
             const videoItem = document.createElement('div');
             videoItem.classList.add('video-item');
@@ -114,7 +109,6 @@ document.addEventListener('DOMContentLoaded', async function () {
             galleryContainer.appendChild(videoItem);
         });
 
-        // Open modal when a video item is clicked
         const videoItems = document.querySelectorAll('.video-item');
         console.log('Video Items Found:', videoItems.length);
         if (videoItems.length === 0) {
@@ -144,7 +138,6 @@ document.addEventListener('DOMContentLoaded', async function () {
             });
         });
 
-        // Close modal when the close button is clicked
         closeModal.addEventListener('click', function () {
             console.log('Close button clicked');
             videoModal.style.display = 'none';
@@ -153,7 +146,6 @@ document.addEventListener('DOMContentLoaded', async function () {
             }
         });
 
-        // Close modal when clicking outside the video
         videoModal.addEventListener('click', function (e) {
             if (e.target === videoModal) {
                 console.log('Clicked outside modal');
@@ -165,7 +157,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
     }
 
-    // Close VPN popup (moved outside async block to ensure it’s always attached)
     vpnCloseButton.addEventListener('click', function () {
         console.log('VPN popup closed');
         vpnPopup.style.display = 'none';
