@@ -1,9 +1,99 @@
-
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
 
 /* Gallery Container */
 .gallery-container {
     display: grid;
     gap: 20px;
+    position: relative; /* For loader positioning */
+    max-width: 900px;
+}
+
+/* Loader */
+.loader {
+    width: 60px;
+    aspect-ratio: 1;
+    border: 15px solid #ddd;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg); /* Centered and rotated as per new style */
+    z-index: 1000;
+}
+
+.loader::before {
+    content: "";
+    position: absolute;
+    inset: -15px;
+    border-radius: 50%;
+    border: 15px solid #7768e7;
+    animation: l18 2s infinite linear;
+}
+
+@keyframes l18 {
+    0%   { clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0); }
+    25%  { clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0); }
+    50%  { clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%); }
+    75%  { clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%); }
+    100% { clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0); }
+}
+
+.loader.hidden {
+    display: none;
+}
+
+/* VPN Popup */
+.vpn-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.vpn-popup-content {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.vpn-popup-content h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.vpn-popup-content p {
+    margin: 0 0 20px;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.vpn-popup-content button {
+    padding: 10px 20px;
+    background: #fff;
+    color: #111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.vpn-popup-content button:hover {
+    background: #ddd;
 }
 
 /* Mobile Portrait (2 columns) */
@@ -62,8 +152,6 @@
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
-    background: url('https://cdn-icons-png.flaticon.com/512/0/375.png') no-repeat center;
-    background-size: contain;
     z-index: 2;
 }
 
@@ -102,22 +190,23 @@
 .video-modal-content {
     position: relative;
     width: 90%;
-    max-width: 800px;
+    max-width: 900px;
     background: #000;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 /* Video Container for 9:16 Aspect Ratio */
 .video-container-9-16 {
     position: relative;
     width: 100%;
-    padding-top: 177.78%;
     max-width: 600px;
+    max-height: 90vh;
     margin: 0 auto;
+    aspect-ratio: 9 / 16;
 }
 
-/* Ensure the iframe is always visible */
+/* Ensure the iframe scales to fit */
 .video-container-9-16 iframe {
     position: absolute;
     top: 0;
@@ -131,7 +220,8 @@
 @media (max-width: 767px) and (orientation: portrait) {
     .video-container-9-16 {
         max-width: 100%;
-        padding-top: 177.78%;
+        max-height: 90vh;
+        aspect-ratio: 9 / 16;
     }
 }
 
@@ -139,7 +229,8 @@
 @media (max-width: 767px) and (orientation: landscape) {
     .video-container-9-16 {
         max-width: 80%;
-        padding-top: 177.78%;
+        max-height: 90vh;
+        aspect-ratio: 9 / 16;
     }
 }
 
@@ -147,7 +238,8 @@
 @media (min-width: 768px) {
     .video-container-9-16 {
         max-width: 600px;
-        padding-top: 177.78%;
+        max-height: 90vh;
+        aspect-ratio: 9 / 16;
     }
 
     .video-modal-content {
