@@ -71,7 +71,8 @@ app.get('/api/shots', async (req, res) => {
     console.error('Error fetching shots:', error.message);
     
     // Provide more detailed error information
-    let errorDetails = {
+    let errorDe 
+    tails = {
       message: error.message
     };
     
