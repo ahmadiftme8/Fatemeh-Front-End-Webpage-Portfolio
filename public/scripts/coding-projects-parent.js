@@ -17,7 +17,10 @@ const projectLinks = {
     'Fancy Count Down': './coding-projects.html#5',
     'Math Sprint Game': './coding-projects.html#7',
     'BookMark Keeper': './coding-projects.html#6',
-    'Sign Up Form': './coding-projects.html#9'
+    'Sign Up Form': './coding-projects.html#9',
+    'Customer Feedback Analyzer' : './coding-projects.html#10',
+    'Secure Docs Vue.Js App' : './coding-projects.html#11',
+
 };
 
 

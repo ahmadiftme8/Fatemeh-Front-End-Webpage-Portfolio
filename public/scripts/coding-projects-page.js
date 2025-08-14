@@ -2,6 +2,101 @@
 
 
 const projectsData = [
+
+
+
+    {
+        id: 11 ,
+        name: "Secure Docs",
+        date: "2025-07-17",
+        author: "Fatemeh",
+        image: "./images/projects/securedocs.jpg",
+        viewLink: "https://securethedocs.netlify.app/",
+        codeLink: "https://github.com/ahmadiftme8/securedocs",
+        technologies: ["Vue JS", "TypeScript", "JavaScript", "CSS&HTML"],
+        features: [
+            { title: "JWT-Based Authentication", description: "Stateless authentication system using JSON Web Tokens with automatic refresh capabilities, providing secure session management without server-side storage requirements." },
+            { title: "Role-Based Access Control", description: "Comprehensive authorization system with admin and user role differentiation, implementing route guards and permission-based UI rendering for secure resource access." },
+            { title: "Serverless Backend Architecture", description: "Cloud-native serverless functions deployed on Netlify, providing scalable authentication endpoints with automatic scaling and reduced infrastructure overhead." },
+            { title: "Real-Time File Upload System", description: "Advanced drag-and-drop file upload interface with progress tracking, chunk-based uploading, and comprehensive file validation for secure document management." },
+            { title: "Reactive State Management", description: "Centralized state management using Pinia with reactive authentication persistence, enabling seamless user experience across page refreshes and browser sessions." },
+            { title: "Advanced Route Protection", description: "Multi-layered navigation guards with automatic authentication restoration, preventing unauthorized access while maintaining smooth user experience during navigation." },
+            { title: "Session Persistence Engine", description: "Intelligent session management with localStorage integration and server-side token validation, ensuring users remain authenticated across browser sessions." },
+            { title: "Comprehensive Error Handling", description: "Production-ready error management system with user-friendly error messages, network timeout handling, and graceful fallback mechanisms." },
+            { title: "Security-First Design", description: "Implementation of security best practices including bcrypt password hashing, token expiration management, and XSS protection through content security policies." },
+            { title: "Responsive Dashboard Interface", description: "Modern Vue 3 Composition API-based dashboard with real-time document management, advanced filtering, and responsive design for optimal user experience." },
+            { title: "Automatic Token Refresh", description: "Seamless background token renewal system preventing session interruptions while maintaining security through controlled token lifecycle management." },
+            { title: "Progressive Web App Features", description: "Modern frontend architecture with lazy loading, code splitting, and optimized build process delivering fast load times and excellent performance metrics." }
+]
+    },
+
+
+
+
+    {
+        id: 10 ,
+        name: "Customer Feedback Analyzer",
+        date: "2025-01-13",
+        author: "Fatemeh",
+        image: "./images/projects/customerfa.jpg",
+        viewLink: "https://securethedocs.netlify.app/",
+        codeLink: "https://github.com/ahmadiftme8/securedocs",
+        technologies: ["JavaScript", "HTML5", "CSS3", "Chart.js", "Tailwind CSS", "Node.js", "Supabase", "PostgreSQL", "Groq AI API", "Real-time Subscriptions"],
+        features: [
+            { 
+                title: "Advanced Groq AI Sentiment Intelligence", 
+                description: "Enterprise-grade natural language processing powered by Groq's LLaMA-3.3-70B model with specialized beauty industry prompt engineering, delivering 95%+ accuracy in sentiment classification, emotional tone detection, and automated improvement suggestion generation." 
+            },
+            { 
+                title: "Supabase Real-Time Database Architecture", 
+                description: "Cloud-native PostgreSQL database with real-time subscriptions enabling instant data synchronization across all connected clients, automatic backup systems, and enterprise-level security with Row Level Security (RLS) policies." 
+            },
+            { 
+                title: "AI-Driven Insights & Recommendations Engine", 
+                description: "Intelligent feedback analysis system using Groq's advanced reasoning capabilities to generate actionable business recommendations, identify trending issues, and predict customer satisfaction patterns based on historical data analysis." 
+            },
+            { 
+                title: "Enterprise Authentication & Authorization", 
+                description: "Supabase Auth integration with multi-factor authentication, OAuth providers support, role-based access control, and automatic session management providing bank-level security for customer data protection." 
+            },
+            { 
+                title: "Real-Time Analytics Dashboard", 
+                description: "Live streaming analytics platform using Supabase real-time subscriptions with Chart.js visualizations, instant metric updates, and collaborative dashboard viewing enabling multiple stakeholders to monitor customer sentiment simultaneously." 
+            },
+            { 
+                title: "Intelligent Beauty Industry Keyword Engine", 
+                description: "Groq AI-powered semantic analysis specifically trained on beauty terminology, automatically extracting product-specific insights, ingredient mentions, application techniques, and beauty concern categorization for targeted improvements." 
+            },
+            { 
+                title: "Scalable Cloud Infrastructure", 
+                description: "Auto-scaling Supabase backend with global CDN distribution, automatic database optimization, connection pooling, and 99.9% uptime SLA ensuring reliable performance during traffic spikes and peak usage periods." 
+            },
+            { 
+                title: "Advanced Data Security & Compliance", 
+                description: "GDPR/CCPA compliant data handling with Supabase's built-in encryption at rest and in transit, automated data retention policies, and audit logging for complete customer data protection and regulatory compliance." 
+            },
+            { 
+                title: "Luxury Beauty Industry UI/UX", 
+                description: "Sophisticated glassmorphism design system with premium color palette integration, elegant typography pairing (Playfair Display + Inter), and micro-animations creating an elevated user experience tailored for luxury beauty brands." 
+            },
+            { 
+                title: "AI-Enhanced Feedback Processing Pipeline", 
+                description: "Multi-stage processing workflow combining Groq AI analysis with Supabase edge functions, featuring sentiment scoring, confidence weighting, trend detection, and automated alert systems for critical feedback requiring immediate attention." 
+            },
+            { 
+                title: "Real-Time Collaborative Features", 
+                description: "Supabase-powered real-time collaboration enabling multiple team members to view live feedback streams, share insights, and coordinate responses with instant notifications and comment threading on customer feedback." 
+            },
+            { 
+                title: "Performance-Optimized Architecture", 
+                description: "Edge-computed AI processing with Supabase's global infrastructure, implementing connection pooling, query optimization, and intelligent caching strategies delivering sub-200ms response times for real-time feedback analysis." 
+            }
+        ]
+    },
+
+
+
+
     {
         id: 1 ,
         name: "Label Generator",
