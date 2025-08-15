@@ -39,8 +39,8 @@ const projectsData = [
         date: "2025-01-13",
         author: "Fatemeh",
         image: "./images/projects/customerfa.jpg",
-        viewLink: "https://securethedocs.netlify.app/",
-        codeLink: "https://github.com/ahmadiftme8/securedocs",
+        viewLink: "https://customer-feedback-analyzer-fj3u.vercel.app/",
+        codeLink: "https://github.com/ahmadiftme8/Customer-Feedback-Analyzer",
         technologies: ["JavaScript", "HTML5", "CSS3", "Chart.js", "Tailwind CSS", "Node.js", "Supabase", "PostgreSQL", "Groq AI API", "Real-time Subscriptions"],
         features: [
             { 
