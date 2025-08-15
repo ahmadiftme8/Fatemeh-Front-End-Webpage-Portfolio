@@ -15,6 +15,7 @@ const projectsData = [
         codeLink: "https://github.com/ahmadiftme8/securedocs",
         technologies: ["Vue JS", "TypeScript", "JavaScript", "CSS&HTML"],
         features: [
+            { title: "Vue.js on Netlify Deployment", description: "Strategic deployment of Vue.js SPA on Netlify platform, leveraging built-in CI/CD pipelines, automatic HTTPS, and seamless integration with serverless functions for a unified full-stack development experience." },
             { title: "JWT-Based Authentication", description: "Stateless authentication system using JSON Web Tokens with automatic refresh capabilities, providing secure session management without server-side storage requirements." },
             { title: "Role-Based Access Control", description: "Comprehensive authorization system with admin and user role differentiation, implementing route guards and permission-based UI rendering for secure resource access." },
             { title: "Serverless Backend Architecture", description: "Cloud-native serverless functions deployed on Netlify, providing scalable authentication endpoints with automatic scaling and reduced infrastructure overhead." },
@@ -27,7 +28,7 @@ const projectsData = [
             { title: "Responsive Dashboard Interface", description: "Modern Vue 3 Composition API-based dashboard with real-time document management, advanced filtering, and responsive design for optimal user experience." },
             { title: "Automatic Token Refresh", description: "Seamless background token renewal system preventing session interruptions while maintaining security through controlled token lifecycle management." },
             { title: "Progressive Web App Features", description: "Modern frontend architecture with lazy loading, code splitting, and optimized build process delivering fast load times and excellent performance metrics." }
-]
+            ]
     },
 
 
