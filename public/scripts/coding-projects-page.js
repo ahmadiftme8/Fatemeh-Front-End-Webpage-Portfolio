@@ -42,7 +42,7 @@ const projectsData = [
         image: "./images/projects/customerfa.jpg",
         viewLink: "https://customer-feedback-analyzer-fj3u.vercel.app/",
         codeLink: "https://github.com/ahmadiftme8/Customer-Feedback-Analyzer",
-        technologies: ["JavaScript", "HTML5", "CSS3", "Chart.js", "Tailwind CSS", "Node.js", "Supabase", "PostgreSQL", "Groq AI API", "Real-time Subscriptions"],
+        technologies: ["JavaScript", "HTML5 & CSS3", "Tailwind CSS", "Supabase", "Groq AI API"],
         features: [
             { 
                 title: "Advanced Groq AI Sentiment Intelligence", 
