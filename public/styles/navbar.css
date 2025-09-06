@@ -37,7 +37,7 @@
 }
 
 .logo img {
-    height: 40px; /* Adjust based on your logo size */
+    height: 20px; /* Adjust based on your logo size */
 }
 
 /* Navigation Menu */
@@ -274,7 +274,7 @@
 
 
     .logo img {
-        height: 30px; 
+        height: 20px; 
     }
 }
 
