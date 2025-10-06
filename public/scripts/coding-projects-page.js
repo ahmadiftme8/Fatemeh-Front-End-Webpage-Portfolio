@@ -104,7 +104,7 @@ const projectsData = [
         date: "2024-10-19",
         author: "Fatemeh",
         image: "./images/projects/labelgenerator.jpg",
-        viewLink: "https://github.com/ahmadiftme8/LabelGenerator/blob/main/.github/workflows/static.yml",
+        viewLink: "https://saedinia.streamlit.app/",
         codeLink: "https://github.com/ahmadiftme8/LabelGenerator",
         technologies: ["Python", "Pdl", "Panda"],
         features: [
